@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro-Edge Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+   
+    <div class="dashboard-layout">
+     <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="./assets/image/logo_White 1.png" alt="">
+      <span class="close-btn" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+     <div class="sidebar-link">
+    <a href="#" class="gap active"> <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span>  Home</a>
+    <a href="#" class="gap space"> <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile</a>
+    <a href="#" class="space"> <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files</a>
+    <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+        <img src="./assets/image/logoout.svg" alt="">
+        Logout</a>
+     </div>
+  </div>
+
+  <div class="main" id="main">
+    <div class="navbar">
+      <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+      <div class="logo"><img src="./assets/image/color-logo.png" alt=""></div>
+      <div class="right">
+       <a href="" style="margin-right: 7px;"><img src="./assets/image/notification-line.svg" alt=""></a>
+
+       <a href="" style="width: 100%; display: block; text-decoration: none;">
+         <div class="user-profile">
+        <img style="width: 50px;" src="./assets/image/photo-1633332755192-727a05c4013d 1.png" alt="">
+        <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+       </div>
+       </a>
+
+       <a href="" class="setting">
+        <img src="./assets/image/setting.svg" alt="">
+       </a>
+
+      </div>
+    </div>
+    <div class="dashboard">
+       <h3>Dashboard</h3>
+       <div class="dashboard-grid">
+
+        <div class="user-intro-card">
+            <div class="card-first-part">
+                <div class="user-bg">
+                <h3>Welcome Back!</h3>
+                <p>Empowering Smarter HR Decisions</p>
+            </div>
+            <div class="hr-image">
+                <img src="./assets/image/man.png" alt="">
+            </div>
+
+            </div>
+             <div class="middle-content-of-profile">
+        <div class="profile-info-grid">
+
+        <div class="profile-content profile-image">
+          <img src="./assets/image/profile1.png" alt="">
+          <h4>Nafiul Islam</h4>
+          <span>HR of Brain Station</span>
+        </div>
+
+        <div class="profile-small-card">
+            <img src="./assets/image/out.svg" alt="">
+            <h4>12 Days</h4>
+            <p>Leave Balance</p>
+        </div>
+
+        <div class="profile-small-card">
+            <img src="./assets/image/calendar.svg" alt="">
+            <h4>03</h4>
+            <p>Pending Tasks</p>
+        </div>
+
+
+        </div>
+        <div class="flex-text">
+            <img src="./assets/image/cuida_alert-outline.svg" alt="">
+            <p>Last Login 2 days ago for this how can i design can
+              you <br> saw me</p>
+        </div>
+        </div>
+        </div>
+
+         <div class="card-column-container">
+         <div class="hr-management-card">
+            <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/payroll.png" alt="">
+                    <h3>Payroll</h3>
+                </div>
+            </a>
+             <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/payrolll.png" alt="">
+                    <h3>PMS</h3>
+                </div>
+            </a>
+
+              <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/leave.png" alt="">
+                    <h3>Leave Management</h3>
+                </div>
+            </a>
+
+                <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/requirement.png" alt="">
+                    <h3>Requirement</h3>
+                </div>
+            </a>
+         </div>
+        
+        <div class="second-row-for-hr-management-card">
+            <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/pf-management.png" alt="">
+                    <h3>PF Management</h3>
+                </div>
+            </a>
+          
+                 
+             <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/probationersprogress.png" alt="">
+                    <h3>Probationers Progress</h3>
+                </div>
+            </a>
+
+             <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/bill-management.png" alt="">
+                    <h3>Bill Management</h3>
+                </div>
+            </a>
+                 
+               <a href=" " style="text-decoration: none;color: black;">
+                <div class="hr-card-item">
+                    <img src="./assets/image/file-cabinet.png" alt="">
+                    <h3>File Cabinet</h3>
+                </div>
+            </a>
+
+         </div>
+        
+        </div>
+  
+         
+
+       
+       </div>
+    </div>
+    <div class="notification-section">
+      <h2>Notification</h2>
+      <div class="notifications">
+
+         <div class="notification-item">
+            <h4>Probationers Progress</h4>
+            <img src="./assets/image/illustrator-1.png" alt="">
+            <a href="">More <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+
+          <div class="notification-item">
+            <h4>Leave Management</h4>
+            <img src="./assets/image/illustrator-2.png" alt="">
+            <a href="">All Employee's Leave Status  <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+         
+             <div class="notification-item">
+            <h4>Bill Management</h4>
+            <img src="./assets/image/undraw_fill-forms_npwp.png" alt="">
+            <a href="">Approved Bill History  <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+
+          <div class="notification-item">
+            <h4>Attendance</h4>
+            <img src="./assets/image/illustrator-3.png" alt="">
+            <a href="">More  <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+
+      </div>
+
+      
+
+
+    </div>
+  </div>
+    </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const main = document.getElementById("main");
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = '100%';
+      } else {
+        main.style.width = '';
+      }
+    }
+  </script>
+</body>
+</html>
+
