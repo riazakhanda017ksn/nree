@@ -115,6 +115,10 @@ body {
   background-color: #f1f5f9;
 }
 
+a.gap span {
+    display: flex;
+    align-items: center;
+}
 
 /* Active and logout styling */
 a.gap {
@@ -555,6 +559,11 @@ a.gap {
     display: flex;
     align-items: center;
 }
+.more-info-for-dashboard{
+  grid-template-columns: repeat(1, 1fr) !important;
+  grid-row-gap: 20px !important;
+
+}
 }
 
 
@@ -730,3 +739,110 @@ a.gap {
   background: linear-gradient(135deg, #1e3a8a, #1e40af);
   transform: scale(1.02);
 }
+
+
+
+
+
+
+/*  */
+
+/* profile page  */
+
+.profile-layout-gap{
+    margin-top: 0px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.more-info-for-dashboard {
+display: grid;
+grid-template-columns: 1fr 0.9fr 0.5fr;
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+margin-top: 22px;
+
+}
+
+.width-customization {
+    width: 98.5%;
+}
+
+/*  */
+
+
+.progress-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+ .progress-title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-top: 13px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #cbd5e1;
+}
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+      border-left: 2px solid #3ca4ff;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-step {
+      position: relative;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #3ca4ff;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .timeline-step.completed::before {
+      background: #3ca4ff;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17l-3.88-3.88-1.41 1.41L9 19 20.29 7.71 18.88 6.29z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 12px 12px;
+    }
+
+    .status-section {
+      border-top: 1px solid #cbd5e1;
+      padding-top: 16px;
+    }
+
+    .status-section p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .status-section .label {
+      font-weight: 500;
+      color: #666;
+    }
+
+    .status-section .value {
+      font-weight: 500;
+    }
+
+    .in-progress {
+      color: #3ca4ff;
+    }

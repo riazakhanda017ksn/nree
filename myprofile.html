@@ -35,12 +35,13 @@
 
       <div class="sidebar-link">
         <!-- Sidebar navigation links -->
-        <a href="#" class="gap active">
-          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+           <a href="index.html" class="gap space">
+           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
-        <a href="myprofile.html" class="gap space">
+        <a href="#" class="gap active">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
+      
         <a href="#" class="space">
           <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
         </a>
@@ -69,8 +70,7 @@
           <a href="#" style="margin-right: 7px;">
             <img src="./assets/image/notification-line.svg" alt="">
           </a>
-
-                   <!-- Click for profile with dropdown -->
+         <!-- Click for profile with dropdown -->
 <div class="user-profile-wrapper" onclick="toggleDropdown()">
   <div class="user-profile">
     <img style="width: 50px;" src="./assets/image/photo-1633332755192-727a05c4013d 1.png" alt="">
@@ -82,6 +82,9 @@
   </div>
 </div>
 
+
+          <!--  -->
+
           <!-- Optional settings icon (currently commented out) -->
           <!-- 
           <a href="#" class="setting">
@@ -91,15 +94,15 @@
         </div>
       </div>
 
-      <!-- Dashboard Content -->
-      <div class="dashboard">
-        <h3>Dashboard</h3>
+<!--  -->
 
-        <div class="dashboard-grid">
+<div class="dashboard">
+
+ <div class="dashboard-grid">
           
           <!-- Welcome Card -->
           <div class="user-intro-card">
-            <div class="card-first-part">
+            <div class="card-first-part profile-layout-gap">
               <div class="user-bg">
                 <h3>Welcome Back!</h3>
                 <p>Empowering Smarter HR Decisions</p>
@@ -145,106 +148,176 @@
             </div>
           </div>
 
-          <!-- HR Management Cards (2 Rows) -->
-          <div class="card-column-container">
-            <div class="hr-management-card">
-              <!-- Each item links to a different HR module -->
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/payroll.png" alt="">
-                  <h3>Payroll</h3>
-                </div>
-              </a>
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/PMS.png" alt="">
-                  <h3>PMS</h3>
-                </div>
-              </a>
-              <a href="leavemanagement.html">
-                <div class="hr-card-item">
-                  <img src="./assets/image/leave.png" alt="">
-                  <h3>Leave Management</h3>
-                </div>
-              </a>
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/Recruitment.2.png" alt="">
-                  <h3>Requirement</h3>
-                </div>
-              </a>
-            </div>
+          <!--  -->
 
-            <!-- Second row of HR cards -->
-            <div class="second-row-for-hr-management-card">
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/resource-allocation.png" alt="">
-                  <h3>PF Management</h3>
-                </div>
-              </a>
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/probationersprogress.png" alt="">
-                  <h3>Probationers Progress</h3>
-                </div>
-              </a>
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/accounting.png" alt="">
-                  <h3>Bill Management</h3>
-                </div>
-              </a>
-              <a href="#">
-                <div class="hr-card-item">
-                  <img src="./assets/image/file cabinet2.png" alt="">
-                  <h3>File Cabinet</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Notification Section -->
-      <div class="notification-section">
-        <h2>Notification</h2>
-        <div class="notifications">
-
-          <!-- Each notification card represents a module or update -->
-          <div class="notification-item">
-            <h4>Probationers Progress</h4>
-            <img src="./assets/image/illustrator-1.png" alt="">
-            <a href="#">More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <div class="notification-item">
-            <h4>Leave Management</h4>
-            <img src="./assets/image/illustrator-2.png" alt="">
-            <a href="#">All Employee's Leave Status <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <div class="notification-item">
-            <h4>Bill Management</h4>
-            <img src="./assets/image/undraw_fill-forms_npwp.png" alt="">
-            <a href="#">Approved Bill History <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <div class="notification-item">
-            <h4>Attendance</h4>
-            <img src="./assets/image/illustrator-3.png" alt="">
-            <a href="#">More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
+ <div class="half-section w-full profile-layout-gap">
+      <div class="custom-section-title">Personal Information</div>
+  <div class="custom-info-group">
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/employee id 1 1.png" alt="Employee ID">
+      <span>Date of Birth</span>
     </div>
+    <div class="info-value">01-06-1989</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/joining date 1.png" alt="Full Name">
+      <span>Joining Date</span>
+    </div>
+    <div class="info-value">01-06-2015</div>
   </div>
 
 
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/department 1.png" alt="Department">
+      <span>Department</span>
+    </div>
+    <div class="info-value">Customer Service Center</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/layers 1.png" alt="Staff Category">
+      <span>Designation</span>
+    </div>
+    <div class="info-value">Sr. Executive Manager</div>
+  </div>
+
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/employee id 1 1.png" alt="Staff Category">
+      <span>National ID Card No.</span>
+    </div>
+    <div class="info-value">99338747462818484848848</div>
+  </div>
+  
+</div>
+
+    </div>
+            
+
+             
+      
+ </div>
+
+  <!-- more info of dashboard -->
+
+<div class="more-info-for-dashboard">
+<!-- first card -->
+ <div class="half-section w-full profile-layout-gap width-customization">
+ <div class="custom-section-title">Company Details</div>
+  <div class="custom-info-group">
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/office.png" alt="Employee ID">
+      <span>Company Name</span>
+    </div>
+    <div class="info-value">Instaquirk Realstate Agency</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/q.png" alt="Full Name">
+      <span>Company Branch</span>
+    </div>
+    <div class="info-value">Dhaka Office</div>
+  </div>
+
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/alarm.png" alt="Department">
+      <span>Employee Type</span>
+    </div>
+    <div class="info-value">Full Time</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/maaan.png" alt="Staff Category">
+      <span>Supervisor Name</span>
+    </div>
+    <div class="info-value">Mr. Karim Hossain</div>
+  </div>
 
   
+</div>
 
-  <!-- JavaScript to toggle sidebar visibility -->
+</div>
+<!-- 2nd card -->
+ <div class="half-section w-full profile-layout-gap width-customization">
+ <div class="custom-section-title">Financial Information</div>
+  <div class="custom-info-group">
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/profit.png" alt="Employee ID">
+      <span>Basic Salary</span>
+    </div>
+    <div class="info-value">2000000 Taka</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/money.png" alt="Full Name">
+      <span>Gross Salary</span>
+    </div>
+    <div class="info-value">1200000 Taka</div>
+  </div>
+
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/passbook.png" alt="Department">
+      <span>Bank Account</span>
+    </div>
+    <div class="info-value">9837336464683</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">
+      <img src="./assets/image/bank.png" alt="Staff Category">
+      <span>Bank Name</span>
+    </div>
+    <div class="info-value">Asia Islamic Bank Mirpur</div>
+  </div>
+
+  
+</div>
+
+</div>
+
+<!-- 3rd card -->
+  <div class="progress-card">
+    <div class="progress-title">Probationers Progress</div>
+
+    <div class="timeline">
+      <div class="timeline-step completed">Onboarding Complete</div>
+      <div class="timeline-step completed">30 Days Check in</div>
+      <div class="timeline-step">60 Days Review</div>
+      <!-- <div class="timeline-step">Final Evaluation</div> -->
+    </div>
+
+    <div class="status-section">
+      <p><span class="label">Status:</span> <span class="value in-progress">In Progress</span></p>
+      <p><span class="label">Expected Date:</span> <span class="value">01-07-25</span></p>
+    </div>
+  </div>
+
+<!--  -->
+ </div>
+
+ <!--  -->
+
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
@@ -257,7 +330,7 @@
       }
     }
 
-        function toggleDropdown() {
+     function toggleDropdown() {
     const dropdown = document.getElementById("profileDropdown");
     dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
   }
