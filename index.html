@@ -17,6 +17,10 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!--  -->
 </head>
 
 <body>
@@ -93,14 +97,14 @@
 
       <!-- Dashboard Content -->
       <div class="dashboard">
-        <h3>Dashboard</h3>
+        <h3 class="dashboard-text">Dashboard</h3>
 
         <div class="dashboard-grid">
           
           <!-- Welcome Card -->
           <div class="user-intro-card">
             <div class="card-first-part">
-              <div class="user-bg">
+              <div class="user-bg user-box-text">
                 <h3>Welcome Back!</h3>
                 <p>Empowering Smarter HR Decisions</p>
               </div>
@@ -114,7 +118,7 @@
               <div class="profile-info-grid">
 
                 <!-- Profile photo and role -->
-                <div class="profile-content profile-image">
+                <div class="profile-content profile-image user-profile-content">
                   <img src="./assets/image/ama.png
                   " alt="">
                   <h4>Nafiul Islam</h4>
@@ -122,14 +126,14 @@
                 </div>
 
                 <!-- Leave balance card -->
-                <div class="profile-small-card">
+                <div class="profile-small-card text_resize">
                   <img src="./assets/image/out.svg" alt="">
                   <h4>12 Days</h4>
                   <p>Leave Balance</p>
                 </div>
 
                 <!-- Pending tasks card -->
-                <div class="profile-small-card">
+                <div class="profile-small-card text_resize">
                   <img src="./assets/image/calendar.svg" alt="">
                   <h4>03</h4>
                   <p>Pending Tasks</p>
@@ -137,7 +141,7 @@
               </div>
 
               <!-- Last login message -->
-              <div class="flex-text">
+              <div class="flex-text logout-last-text">
                 <img src="./assets/image/cuida_alert-outline.svg" alt="">
                 <p>
                   Last Login 2 days ago for this how can I design can you <br> saw me
@@ -148,7 +152,7 @@
 
           <!-- HR Management Cards (2 Rows) -->
           <div class="card-column-container">
-            <div class="hr-management-card">
+            <div class="hr-management-card text_bold">
               <!-- Each item links to a different HR module -->
               <a href="#">
                 <div class="hr-card-item">
@@ -177,7 +181,7 @@
             </div>
 
             <!-- Second row of HR cards -->
-            <div class="second-row-for-hr-management-card">
+            <div class="second-row-for-hr-management-card text_bold">
               <a href="#">
                 <div class="hr-card-item">
                   <img src="./assets/image/resource-allocation.png" alt="">
@@ -209,7 +213,7 @@
 
       <!-- Notification Section -->
       <div class="notification-section">
-        <h2>Notification</h2>
+        <h2 class="notification-text">Notification</h2>
         <div class="notifications">
 
           <!-- Each notification card represents a module or update -->
@@ -238,13 +242,462 @@
           </div>
         </div>
       </div>
+
+  
+      <!--  -->
+        <div class="rounded-container">
+          <h4 class="mb-4"> All Leave Requests List</h4>
+          <div class="table-responsive">
+            <table class="table align-middle text-center">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>User ID</th>
+                  <th>Name</th>
+                  <th>Leave Reason</th>
+                  <th>Days</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  data-user='{"id":"EF14545","name":"Md. Imran Ibne Ishaque Rakib","reason":"Fever and doctor advised rest.","duration":"1 day"}'>
+                  <td>01</td>
+                  <td><span class="color-one">EF14545</span></td>
+                  <td>Md. Imran Ibne Ishaque Rakib</td>
+                  <td>Fever and doctor advised rest.</td>
+                  <td><span class="w-auto px-3">1 day</span></td>
+                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
+                </tr>
+                <tr
+                  data-user='{"id":"OF744","name":"Shakil Mahmud","reason":"Severe cold and headache.","duration":"2 days"}'>
+                  <td>02 </td>
+                  <td><span>OF744</span> </td>
+                  <td>Shakil Mahmud</td>
+                  <td>Severe cold and headache.</td>
+                  <td><span class="w-auto px-3 color-one">2 days </span></td>
+                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
+                </tr>
+                <tr
+                  data-user='{"id":"EF9302","name":"Md. Sazib Mia","reason":"Family emergency travel.","duration":"3 days"}'>
+                  <td>03</td>
+                  <td> <span class="color-two">EF9302</span></td>
+                  <td>Md. Sazib Mia</td>
+                  <td>Family emergency travel.</td>
+                  <td> <span class="w-auto px-3">3 days</span></td>
+                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
+                </tr>
+                <tr
+                  data-user='{"id":"EF14512","name":"Md. Shohel Rana","reason":"Personal medical treatment.","duration":"4 days"}'>
+                  <td>04</td>
+                  <td><span class="color-three">EF14511 </span></td>
+                  <td>Md. Shohel Rana</td>
+                  <td>Personal medical treatment.</td>
+                  <td> <span class="w-auto px-3 color-two">4 days</span></td>
+                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
+                </tr>
+                <tr
+                  data-user='{"id":"EF5440","name":"Md. Anul Haque","reason":"Marriage ceremony attendance.","duration":"5 days"}'>
+                  <td>05</td>
+                  <td> <span class="color-four">OF744</span></td>
+                  <td>Md. Anul Haque</td>
+                  <td>Marriage ceremony attendance.</td>
+                  <td><span class="w-auto px-3">5 days </span></td>
+                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> 
+
+             <!-- Full Width Modal -->
+      <div class="modal fade" id="leaveModal" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="leaveModalLabel">Leave Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+              <!-- table modal -->
+              <div class="custom-row">
+                <!-- Left Section: Employee Info -->
+                <div class="half-section" style="height: 680px;overflow: auto;">
+                  <div class="custom-section-title">Leave Application for 2nd Approver</div>
+                  <div class="custom-info-group">
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/employee id 1 1.png" alt="Employee ID">
+                        <span>Employee ID</span>
+                      </div>
+                      <div class="info-value">387474463683222</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/user 1.png" alt="Full Name">
+                        <span>Full Name</span>
+                      </div>
+                      <div class="info-value">Mohammad Shafayet Kabir</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/layers 1.png" alt="Designation">
+                        <span>Designation</span>
+                      </div>
+                      <div class="info-value">Customer Service Officer</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/department 1.png" alt="Department">
+                        <span>Department</span>
+                      </div>
+                      <div class="info-value">Customer Service Center</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/Staff Category 1 1.png" alt="Staff Category">
+                        <span>Staff Category</span>
+                      </div>
+                      <div class="info-value">MS</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/word 1.png" alt="First Line Manager">
+                        <span>First Line Manager</span>
+                      </div>
+                      <div class="info-value">Mr. XYZ</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/copy 1.png" alt="Second Line Manager">
+                        <span>Second Line Manager</span>
+                      </div>
+                      <div class="info-value">Mr. XYZ</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/gender 1.png" alt="Gender">
+                        <span>Gender</span>
+                      </div>
+                      <div class="info-value">Male</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/Date of Birth 1.png" alt="Date of Birth">
+                        <span>Date of Birth</span>
+                      </div>
+                      <div class="info-value">01-06-1989</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/joining date 1.png" alt="Joining Date">
+                        <span>Joining Date</span>
+                      </div>
+                      <div class="info-value">01-06-2015</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/Branch1 1.png" alt="Company Branch">
+                        <span>Company Branch</span>
+                      </div>
+                      <div class="info-value">Dhaka Office</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/2nd line manager email 1.png" alt="Email">
+                        <span>First Line Manager Email</span>
+                      </div>
+                      <div class="info-value">Mr.xyz.1234@gmail.com</div>
+                    </div>
+
+                    <div class="info-row">
+                      <div class="info-label">
+                        <img src="./assets/image/phone no 1.png" alt="Phone Number">
+                        <span>Phone Number</span>
+                      </div>
+                      <div class="info-value">01907777798</div>
+                    </div>
+                  </div>
+
+                </div> 
+
+
+                <!-- Right Section: Leave Request -->
+
+                 <div class="right-side-container">
+                  <div class=" height-management" style="height: 680px;">
+                    <div class="custom-section-title">Leave Request</div>
+                    <div class="custom-info-group">
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/Financial Year 1.png" alt="">
+                          <span>Financial Year</span>
+                        </div>
+                        <div class="info-value">2024-2025</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/leave category1 1.png" alt="">
+                          <span>Leave Type</span>
+                        </div>
+                        <div class="info-value">Casual Leave</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/calendar (1) 1.png" alt="">
+                          <span>Applied Year</span>
+                        </div>
+                        <div class="info-value">2024-05-01</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/end 1.png" alt="">
+                          <span>Start Date</span>
+                        </div>
+                        <div class="info-value">2025-05-01</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/leave 1.png" alt="">
+                          <span>End Date</span>
+                        </div>
+                        <div class="info-value">2025-05-02</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/leave.png" alt="">
+                          <span>Request Leave Days</span>
+                        </div>
+                        <div class="info-value">For 2 days</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/joining date 1.png" alt="">
+                          <span>Leave Reason</span>
+                        </div>
+                        <div class="info-value">Out of Dhaka with Family</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/Date of Birth 1.png" alt="">
+                          <span>Replace Date</span>
+                        </div>
+                        <div class="info-value">2025-06-02</div>
+                      </div>
+                      <div class="info-row">
+                        <div class="info-label">
+                          <img src="./assets/image/success 1.png" alt="">
+                          <span>Remark</span>
+                        </div>
+                        <div class="info-value">0.5</div>
+                      </div>
+
+                      <!--  -->
+                           <div class="info-row">
+                        <div class="info-label">
+                              <button class="button">2nd Approve Approver</button>
+                        </div>
+                        <div class="info-value"><button class="button alert-color">2nd Approve Reject</button></div>
+                      </div>
+                      <!--  -->
+
+                    </div>
+
+                  </div>
+                  <!-- <div class="leave-request-submission">
+                    <div class="section-title">Leave Request For Approval<img src="./assets/image/email_5089889 1.png"
+                        alt=""></div>
+                    <a href=""> <span style="margin-right: 10px;"><i class="fa-solid fa-plus"></i></span> 1st Approver
+                      Approve</a>
+
+                  </div> -->
+                </div>
+           
+
+              </div>
+              <!--  -->
+
+              <!-- chart modal -->
+               <div class="carousel gap_" id="autoCarousel">
+          <div class="custom-section-title edit-more">Leave Summary of Shazid Mia (EF909)</div>
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Duplicate cards at the end for smooth loop -->
+            <div class="leave-box">
+              <p><strong>Annual Leave</strong></p>
+              <div class="chart-wrapper">
+                <canvas id="chart1"></canvas>
+                <div class="center-label">25000Tk</div>
+              </div>
+              <div class="total-chart-value">
+                <p><span class="dark-blue"></span> 18 Days</p>
+                <p><span></span> 10 Days</p>
+              </div>
+            </div>
+
+            <!-- Casual Leave -->
+            <div class="leave-box">
+              <p><strong>Casual Leave</strong></p>
+              <div class="chart-wrapper">
+                <canvas id="chart2"></canvas>
+                <div class="center-label">
+                  20000Tk</div>
+              </div>
+              <div class="total-chart-value">
+                <p> <span class="dark-blue"></span> 9 Days</p>
+                <p> <span></span> 3 Days</p>
+              </div>
+            </div>
+
+            <!-- Examination Leave -->
+            <div class="leave-box">
+              <p><strong>Examination Leave</strong></p>
+              <div class="chart-wrapper">
+                <canvas id="chart3"></canvas>
+                <div class="center-label">10000Tk</div>
+              </div>
+
+              <div class="total-chart-value">
+                <p> <span class="dark-blue"></span> 5 Days</p>
+                <p> <span></span> 3 Days</p>
+              </div>
+            </div>
+
+            <div class="leave-box">
+              <p><strong>Compensatory Leave</strong></p>
+              <div class="chart-wrapper">
+                <canvas id="chart4"></canvas>
+                <div class="center-label">17000Tk</div>
+              </div>
+
+              <div class="total-chart-value">
+                <p> <span class="dark-blue"></span> 26 Days</p>
+                <p> <span></span> 15 Days</p>
+              </div>
+
+            </div>
+
+
+
+          </div>
+             </div>
+              <!--  -->
+
+              <!--  -->
+
+  <div class="leave-request-container gap_">
+    <div class="leave-request-title">Previous Leave Request</div>
+    <div class="leave-request-wrapper">
+      <table class="leave-request-table">
+        <thead>
+          <tr>
+            <th class="left-radius">No.</th>
+            <th>Leave Type</th>
+            <th>Reason</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Days</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th class="right-radius">Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Casual Leave (Non Management)</td>
+            <td>Sickness.</td>
+            <td>03-07-2025</td>
+            <td>03-07-2025</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-approver">Approved by 1st approver</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Casual Leave (Non Management)</td>
+            <td>Family problem.</td>
+            <td>17-05-2025</td>
+            <td>17-05-2025</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-hr">HR Approved</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Annual Leave (Non Management)</td>
+            <td>Extra Holiday</td>
+            <td>08-04-2025</td>
+            <td>08-04-2025</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-hr">HR Approved</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Annual Leave (Non Management)</td>
+            <td>Akheri Monajat</td>
+            <td>16-02-2025</td>
+            <td>16-02-2025</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-hr">HR Approved</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Casual Leave (Non Management)</td>
+            <td>Family problem</td>
+            <td>10-02-2025</td>
+            <td>10-02-2025</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-hr">HR Approved</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Casual Leave (Non Management)</td>
+            <td>Sickness</td>
+            <td>13-08-2024</td>
+            <td>13-08-2024</td>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td><span class="leave-status-badge leave-status-hr">HR Approved</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+              <!--  -->
+
+
     </div>
   </div>
 
 
+<!-- js for boostrap  -->
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- script for chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+   <!--  -->
   <!-- JavaScript to toggle sidebar visibility -->
   <script>
     function toggleSidebar() {
@@ -272,6 +725,36 @@
       dropdown.style.display = "none";
     }
   });
+  
+      // chart js
+        const dataSets = [
+          { id: 'chart1', data: [18, 10] },  // Annual Leave
+          { id: 'chart2', data: [10, 9] },  // Casual Leave
+          { id: 'chart3', data: [5, 6] },  // Examination Leave
+          { id: 'chart4', data: [26, 10] },  // Examination Leave
+          { id: 'chart5', data: [12, 7] },  // Birthday Leave
+        ];
+
+        dataSets.forEach(set => {
+          new Chart(document.getElementById(set.id), {
+            type: 'doughnut',
+            data: {
+              labels: ['Consumed', 'Available'],
+              datasets: [{
+                data: set.data,
+                backgroundColor: ['#007dff', '#123A6B'], // Consumed, Available
+                borderWidth: 0
+              }]
+            },
+            options: {
+              cutout: '70%',
+              plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+              }
+            }
+          });
+        });
   </script>
 </body>
 </html>
