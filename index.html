@@ -39,7 +39,7 @@
 
       <div class="sidebar-link">
         <!-- Sidebar navigation links -->
-        <a href="#" class="gap active">
+        <a href="index.html" class="gap active">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
         <a href="myprofile.html" class="gap space">
@@ -154,7 +154,7 @@
           <div class="card-column-container">
             <div class="hr-management-card text_bold">
               <!-- Each item links to a different HR module -->
-              <a href="#">
+              <a href="payroll.html">
                 <div class="hr-card-item">
                   <img src="./assets/image/payroll.png" alt="">
                   <h3>Payroll</h3>
@@ -216,7 +216,7 @@
         <h2 class="notification-text">Notification</h2>
         <div class="notifications">
           <!-- leave management -->
-         <div class="rounded-container table-responsive" style="margin: 0; padding-bottom: 10px;">
+         <div class="rounded-container table-responsive height-management-item" style="margin: 0; padding-bottom: 10px;">
           <h4 class="mb-4"> Leave Management Notification</h4>
           <div class="table-responsive">
             <table class="table align-middle text-center">
@@ -230,6 +230,13 @@
                 </tr>
               </thead>
               <tbody>
+                <tr class="position-relative" style="height: 55px;">
+                  <td ><p class="absolute-change">Leave Application for 1st Approval</p></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td> <p class="position-change-for-absolute"><a href="" class="d-block bt-for-status">All Employee's Leave Status</a></p> </td>
+                </tr>
                 <tr
                   data-user='{"id":"EF14545","name":"Md. Imran Ibne Ishaque Rakib","reason":"Fever and doctor advised rest.","duration":"1 day"}'>
                   <td><span class="color-one">EF14545</span></td>
@@ -246,6 +253,13 @@
                   <td><span class="w-auto px-3 color-one">2 days </span></td>
                   <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
                 </tr>
+                 <tr class="position-relative" style="height: 55px;">
+                  <td ><p class="absolute-change">Leave Application for 2nd Approval</p></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td> </td>
+                </tr>
                 <tr
                   data-user='{"id":"EF9302","name":"Md. Sazib Mia","reason":"Family emergency travel.","duration":"3 days"}'>
                   <td> <span class="color-two">EF9302</span></td>
@@ -254,6 +268,7 @@
                   <td> <span class="w-auto px-3">3 days</span></td>
                   <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
                 </tr>
+                
                 <tr
                   data-user='{"id":"EF14512","name":"Md. Shohel Rana","reason":"Personal medical treatment.","duration":"4 days"}'>
                   <td><span class="color-three">EF14511 </span></td>
@@ -329,9 +344,9 @@
             <div class="modal-body"> 
               <!-- table modal -->
                 <div class="custom-container background-change" style="margin: 32px 0; margin-top: 0;">
-        <div class="custom-section-title spacing-hide">Employee Information</div>
+        <div class="custom-section-title spacing-hide" style="border: none;">Employee Information</div>
         <div class="custom-row">
-          <div class="half-section remove-space-zero" style="box-shadow: none;">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
             <div class="custom-info-group">
               <div class="info-row">
                 <div class="info-label">
@@ -383,7 +398,7 @@
             </div>
           </div>
 
-          <div class="half-section remove-space-zero" style="box-shadow: none;">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
             <div class="custom-info-group">
               <div class="info-row">
                 <div class="info-label">
@@ -593,7 +608,7 @@
               </div>
 
               <div class="leave-box bottom-side-padding">
-                <p><strong>Examination Leave</strong></p>
+                <p><strong>Sick Leave</strong></p>
                 <div class="chart-wrapper popup-chart">
                   <canvas id="chart3"></canvas>
                   <div class="center-label">14 Days</div>
@@ -719,15 +734,22 @@
   <!-- JavaScript to toggle sidebar visibility -->
   <script>
     function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      const main = document.getElementById("main");
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
       sidebar.classList.toggle("hidden");
       if (sidebar.classList.contains("hidden")) {
-        main.style.width = '100%';
+        main.style.width = "100%";
       } else {
-        main.style.width = '';
+        main.style.width = "";
       }
     }
+  }
 
         function toggleDropdown() {
     const dropdown = document.getElementById("profileDropdown");

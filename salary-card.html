@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Salary Card</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+        <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="#" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+         <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+
+          <!--  -->
+
+          <!-- Optional settings icon (currently commented out) -->
+          <!-- 
+          <a href="#" class="setting">
+            <img src="./assets/image/setting.svg" alt="">
+          </a>
+          -->
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="dashboard">
+  <div class="custom-container background-change" style="margin: 0;">
+        <div class="custom-section-title spacing-hide" style="border: none;">Salary Card for the month of February 2025</div>
+        <div class="custom-row">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group">
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/employee id 1 1.png" alt="Employee ID">
+                  <span>Employee ID</span>
+                </div>
+                <div class="info-value">387474463683222</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/user 1.png" alt="Full Name">
+                  <span>Full Name</span>
+                </div>
+                <div class="info-value">Mohammad Shafayet Kabir</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/layers 1.png" alt="Designation">
+                  <span>Designation</span>
+                </div>
+                <div class="info-value">Customer Service Officer</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/department 1.png" alt="Department">
+                  <span>Department</span>
+                </div>
+                <div class="info-value">Customer Service Center</div>
+              </div>
+
+          
+            </div>
+          </div>
+
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group">
+           
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/gender 1.png" alt="Gender">
+                  <span>Gender</span>
+                </div>
+                <div class="info-value">Male</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/Date of Birth 1.png" alt="Date of Birth">
+                  <span>Date of Birth</span>
+                </div>
+                <div class="info-value">01-06-1989</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/joining date 1.png" alt="Joining Date">
+                  <span>Joining Date</span>
+                </div>
+                <div class="info-value">01-06-2015</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/Branch1 1.png" alt="Company Branch">
+                  <span>Company Branch</span>
+                </div>
+                <div class="info-value">Dhaka Office</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <!--  -->
+
+  <!-- salary form -->
+<div class="right-form-form w-full" style="margin-top: 30px !important;">
+          <div class="custom-section-title" style="padding-bottom: 20px;">Employee Salary Selector</div>
+          <form action="" >
+            <div class="flex___item">
+            <div class="leave-form-field">
+              <p>Select Month</p>
+              <select id="leave-year" name="month">
+                <option value="">Select Leave Month</option>
+                 <option value="1">January</option>
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option value="4">April</option>
+  <option value="5">May</option>
+  <option value="6">June</option>
+  <option value="7">July</option>
+  <option value="8">August</option>
+  <option value="9">September</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+              </select>
+            </div>
+
+            <div class="leave-form-field">
+              <p>Select Year</p>
+             <select id="year" name="year">
+  <option value="">Select Year</option>
+</select>  </div>
+            </div>
+
+      
+        
+
+            <div class="button-flex">
+              <button class="dark-color">Submit</button>
+            </div>
+          </form>
+        </div>
+  <!--  -->
+
+  <div class="custom-container background-change add-color-blue" style="margin: 0; margin-top: 25px; margin-bottom: 20px !important;">
+        <div class="custom-section-title spacing-hide" style="border: none;color: white;">Earnings and Deductions Summary</div>
+        <div class="custom-row">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group">
+              <div class="info-row">
+                <div class="info-label" style="gap: 10px;">
+                  <img style="height: 35px;" src="./assets/image/in.jpg" alt="Employee ID">
+                  <span style="font-weight: 600;font-size: 17px;">Earnings</span>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <span style="font-weight: 600;">Total Earning</span>
+                </div>
+                <div class="info-value" style="font-weight: 600; text-align: end;">0.00</div>
+              </div>
+
+          
+
+          
+            </div>
+          </div>
+
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group">
+           
+
+                <div class="info-row">
+                <div class="info-label" style="gap: 10px;">
+                  <img style="height: 35px;" src="./assets/image/deduction.png" alt="Employee ID">
+                  <span style="font-weight: 600;font-size: 17px;">Deduction</span>
+                </div>
+              </div>
+
+             <div class="info-row">
+                <div class="info-label">
+                  <span style="font-weight: 600;">Total Deduction</span>
+                </div>
+                <div class="info-value" style="font-weight: 600; text-align: end;">0.00</div>
+              </div>
+
+
+              <div class="info-row">
+                <div class="info-label">
+                  <span style="font-weight: 600;">Net Pay:	</span>
+                </div>
+                <div class="info-value" style="font-weight: 600; text-align: end;">0.00</div>
+              </div>
+           
+
+            </div>
+          </div>
+        </div>
+  </div>
+
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
+  <script>
+
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+     function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+
+//   select year
+  const yearSelect = document.getElementById("year");
+  for (let year = 2025; year <= 2050; year++) {
+    let option = document.createElement("option");
+    option.value = year;
+    option.text = year;
+    yearSelect.add(option);
+  }
+  </script>
+</body>
+</html>
