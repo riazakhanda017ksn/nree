@@ -2453,3 +2453,9 @@ grid-row-gap: 0px;
         color: #555;
       }
     }
+
+    #lottie-container {
+      width: 80%;   /* set your preferred size */
+      height: 100%;
+      margin: auto;
+    }

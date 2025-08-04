@@ -49,14 +49,24 @@
         </div>
     </div>
     <div class="login-bg">
-        <img src="./assets/image/login-2.png" alt="">
+        <!-- <img src="./assets/image/login-2.png" alt=""> -->
+           <div id="lottie-container"></div>
     </div>
      
     </div>
   
 
 
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script>
+    // Load the Lottie animation
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-container'), // where to render
+      renderer: 'svg',  // can be 'svg', 'canvas', or 'html'
+      loop: true,       // set to false if you don’t want it to loop
+      autoplay: true,   // start automatically
+      path: 'assets/image/tx6WeBoj5u.json' // relative path to your animation file
+    });
+  </script>
 </body>
 </html>
