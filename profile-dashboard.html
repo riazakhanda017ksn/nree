@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title> Dashboard Profile</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!--  -->
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+        <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="#" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+
+                   <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+          <!-- Optional settings icon (currently commented out) -->
+          <!-- 
+          <a href="#" class="setting">
+            <img src="./assets/image/setting.svg" alt="">
+          </a>
+          -->
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard">
+       <div class="employee-dashboard-main-container">
+    <div class="employee-dashboard-top-header">Employee Dashboard</div>
+
+    <div class="employee-dashboard-grid-layout-body">
+      <!-- Profile Section -->
+      <div class="employee-dashboard-profile-card-wrapper">
+        <div class="employee-dashboard-profile-image-circle"><img src="./assets/image/profile2.png" alt=""></div>
+        <div class="employee-dashboard-profile-fullname-text">Shak Abdus Sobur</div>
+        <div class="employee-dashboard-profile-department-text">Customer Service Centre</div>
+      </div>
+
+      <!-- Employee Info Section -->
+      <div class="employee-dashboard-detailed-info-container">
+        <h3>Employee Details</h3>
+         <p><span>🆔 ID:</span> 10305</p>
+        <p><span>👤 Name:</span> Shak Abdus Sobur</p>
+        <p><span>🏢 Department:</span> Customer Service Centre</p>
+      </div>
+    </div>
+
+    <!-- Footer Tiles -->
+    <div class="employee-dashboard-footer-grid-section">
+      <a href="personal.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">👤</span>Personal</a>
+      <a href="employment-information.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">💼</span>Employment</a>
+      <a href="organogram.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🗂️</span>Organogram</a>
+      <a href="leave.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🏖️</span>Leave</a>
+      <a href="dashboard-attendence.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">📅</span>Attendance</a>
+    </div>
+  </div>
+        
+      </div>
+
+ 
+  
+      <!--  -->
+     
+
+
+
+
+
+<!-- script for chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!--  -->
+  <!-- JavaScript to toggle sidebar visibility -->
+  <script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+        function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  
+//   table js
+  
+  </script>
+
+
+
+</body>
+</html>
