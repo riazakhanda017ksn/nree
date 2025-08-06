@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Att Correction Request</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+             <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="#" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+         <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="dashboard">
+  <div class="attendance-correction-main-container">
+    <div class="attendance-correction-section-heading">Attendance Correction Request</div>
+    
+    <div class="attendance-correction-form-row">
+      <div class="attendance-correction-form-group">
+        <label>Attendance Change Date</label>
+        <input type="date" />
+      </div>
+      <div class="attendance-correction-form-group">
+        <label>Change Request For</label>
+        <select>
+          <option>OUT</option>
+          <option>IN</option>
+        </select>
+      </div>
+      <div class="attendance-correction-form-group">
+        <label>Arrival/Departure Time</label>
+        <input type="time" />
+      </div>
+    </div>
+
+    <label style="margin-bottom: 10px; display: block;">Reason:</label>
+    <div class="attendance-correction-reason-options-container">
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Late due to personal reason</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Late due to official reason</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Late due to official pool transport</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Early out due to personal reason</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Early out due to official reason</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> In punch miss</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Out punch miss</label>
+      <label class="attendance-correction-reason-option-box"><input type="radio" name="reason" /> Out station duty</label>
+    </div>
+
+    <div class="attendance-correction-form-group">
+      <label>Reason Detail:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <button class="attendance-correction-submit-button">Submit</button>
+
+    <div class="attendance-correction-table-wrapper">
+      <div class="attendance-correction-section-heading" style="margin-top:20px;">Attendance Correction History</div>
+      <table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Date</th>
+      <th>Reason</th>
+      <th>Reason Details</th>
+      <th>Arrival / Departure time</th>
+      <th>Correction Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2025-08-06</td>
+      <td>Out Punch Miss</td>
+      <td>Forgot to punch out</td>
+      <td>06:10 PM</td>
+      <td>
+        <span class="badgex badge-correction-type-out">OUT</span>
+      </td>
+      <td>
+        <span class="badgex badge-status-pending-approval">Pending</span>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2025-08-05</td>
+      <td>Late Arrival</td>
+      <td>Traffic jam</td>
+      <td>09:20 AM</td>
+      <td>
+        <span class="badgex badge-correction-type-in">IN</span>
+      </td>
+      <td>
+        <span class="badgex badge-status-approved-successfully">Approved</span>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-08-04</td>
+      <td>Out Punch Miss</td>
+      <td>System error</td>
+      <td>05:45 PM</td>
+      <td>
+        <span class="badgex badge-correction-type-out">OUT</span>
+      </td>
+      <td>
+        <span class="badgex badge-status-rejected-by-admin">Rejected</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+  </div>
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
+  <script>
+ function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+     function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  </script>
+</body>
+</html>
