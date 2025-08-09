@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Probationers Progress</title>
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+             <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="#" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+         <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="dashboard">
+<div class="probationer-progress-main-container">
+
+    <div class="probationer-info-card-container">
+            <div class="probationer-progress-title-text">📋 Probationers Progress Form 1</div>
+
+      <!-- Top Info Grid -->
+      <div class="probationer-info-grid-layout">
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">👤 Name:</span>
+          <span class="probationer-info-value">Anisur Rahman</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">🆔 Employee ID:</span>
+          <span class="probationer-info-value">10510</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">📅 Date of Joining:</span>
+          <span class="probationer-info-value">01-10-2023</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">💼 Job Title:</span>
+          <span class="probationer-info-value">HOD, E-commerce Operation</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">🏢 Department:</span>
+          <span class="probationer-info-value">Sourcing</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">📍 Location:</span>
+          <span class="probationer-info-value">Dhaka Office</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">📝 Appraiser's name:</span>
+          <span class="probationer-info-value">N E A Shibly</span>
+        </div>
+        <div class="probationer-info-item-block">
+          <span class="probationer-info-label">🎯 Appraiser's designation:</span>
+          <span class="probationer-info-value">CEO & Chief Consultant</span>
+        </div>
+      </div>
+
+      <!-- Assessment Period -->
+      <div class="probationer-section-title">⏳ Assessment Period:</div>
+      <div class="probationer-section-text">From: 01-10-2023 To: 01-01-2024</div>
+
+      <!-- Education -->
+      <div class="probationer-section-title">🎓 Education:</div>
+      <div class="probationer-section-text">
+        EMBA 2009 University of Liberal Arts Bangladesh BSc in Computing & Information System Hon 2009 London Metropolitan University International Advance Diploma in Computing & Information NCC 2005 Diploma in Computing & Information NCC 2002
+      </div>
+
+      <!-- Previous Employment -->
+      <div class="probationer-section-title">🏆 Previous Employment:</div>
+      <div class="probationer-section-text">
+        Project Manager (HOD, E-COM) Excel Telecom Pvt.Ltd. CTO Winbiz Digital Ltd Manager (HOD IT) Okapia Mobile Assistant Manager IT IPOST Services Ltd. Executive MIS Pride Group Limited
+      </div>
+
+      <!-- Experience -->
+      <div class="probationer-section-title">📈 Total Year of Experience:</div>
+      <div class="probationer-section-text">16</div>
+
+      <!-- Description -->
+      <div class="probationer-section-title">🗒 Brief description of the assignment during probationary/training period:</div>
+      <div class="probationer-section-text">
+        During my probationary/training period, I will be diving into understanding Poshora operations, the ins and outs of the call center, how digital marketing and social media works, and the basics of application development. My task will be to predict how much money the company will make in the future, considering what technicians and non-technical staff will be up to. I will be studying and presenting my findings to help the company plan ahead. I am looking forward to this opportunity to learn and contribute.
+      </div>
+
+      <!-- Status -->
+      <div class="probationer-status-banner">⏳ Your Application is in under process</div>
+    </div>
+  </div>
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
+  <script>
+ function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+     function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Requitment</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+             <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="#" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+         <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="dashboard">
+     <div class="modernjobform__container">
+    <div class="modernjobform__breadcrumbs">Home / <span class="modernjobform__breadcrumbs--active">Recruitment</span></div>
+    <div class="modernjobform__card">
+      <div class="modernjobform__header">
+        <h2 class="modernjobform__title">Add New Job</h2>
+      </div>
+      <form class="modernjobform__form">
+        <div class="modernjobform__form-grid">
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Department</label>
+            <input type="text" class="modernjobform__input"  >
+          </div>
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Position</label>
+            <input type="text" class="modernjobform__input" >
+          </div>
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Position Status</label>
+            <select class="modernjobform__select">
+              <option>Replacement</option>
+              <option>New</option>
+            </select>
+          </div>
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Position Required</label>
+            <input type="number" class="modernjobform__input" min="1" value="1">
+          </div>
+          <!-- LOCATION CHECKBOXES (FULL WIDTH) -->
+          <div class="modernjobform__form-group modernjobform__form-group--full">
+            <label class="modernjobform__label">Location</label>
+            <div class="modernjobform__location-checkboxes">
+              <div class="modernjobform__checkbox-scrollbox">
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> 20</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Accessories</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> ADL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> AGL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Ashulia Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Banga Engineering Company Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Casual Garments Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Chattogram Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Corporate Office</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Creative Collection Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Creative Collections Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Creative Wash Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Denim HDL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Denim Textile</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> EWDL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Ha-Meem Group</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Kaligani Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Kaligonj Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Mawna Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> NCL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Nishat Packaging & Printing Ind. Ltd.</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Printing Press</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> RGL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Sajid Washing & Dyeing Ltd</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> SPIL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Spinning HSML</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Sylhet Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> TISWL</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Tongi Zone</label>
+                <label class="modernjobform__checkbox-label"><input type="checkbox" class="modernjobform__checkbox"> Zone Central</label>
+              </div>
+            </div>
+          </div>
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Salary</label>
+            <input type="number" class="modernjobform__input" >
+          </div>
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Experiences</label>
+            <select class="modernjobform__select">
+              <option>1 - 2 Years</option>
+              <option>3 - 5 Years</option>
+              <option>5 - 8 Years</option>
+              <option>10+ Years</option>
+            </select>
+          </div>
+
+          
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Education</label>
+            <input type="text" class="modernjobform__input">
+          </div>
+
+          <div class="modernjobform__form-group">
+            <label class="modernjobform__label">Expiration Date</label>
+            <input type="date" class="modernjobform__input">
+          </div>
+
+
+          <div class="modernjobform__form-group modernjobform__form-group--full">
+            <label class="modernjobform__label">Description</label>
+            <textarea class="modernjobform__textarea" rows="2" placeholder="Enter job description"></textarea>
+          </div>
+          <div class="modernjobform__form-group modernjobform__form-group--full">
+            <label class="modernjobform__label">Requirement</label>
+            <textarea class="modernjobform__textarea" rows="2" placeholder="Enter requirement"></textarea>
+          </div>
+          
+        </div>
+        <button class="modernjobform__submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="modernjobform__table-section">
+      <div class="modernjobform__table-header">Your Job Request</div>
+      <table class="modernjobform__table">
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Position Required</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Experiences</th>
+            <th>Education</th>
+            <th>Resume</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Manager</td>
+            <td><span class="modernjobform__status-badge--new">New</span></td>
+            <td>1</td>
+            <td>Chattogram Zone</td>
+            <td>10000.00</td>
+            <td>5 - 8 Years</td>
+            <td>Masters</td>
+            <td>4</td>
+            <td>
+              <div class="modernjobform__dropdown">
+                <button class="modernjobform__dropdown-btn">Actions ▾</button>
+                <div class="modernjobform__dropdown-content">
+                  <a href="#" class="modernjobform__dropdown-item">View</a>
+                  <a href="#" class="modernjobform__dropdown-item">Edit</a>
+                  <a href="#" class="modernjobform__dropdown-item">Delete</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
+  <script>
+ function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+     function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  </script>
+</body>
+</html>
