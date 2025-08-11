@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Page title -->
-  <title>Employee Provident Fund</title>
-
+  <title>Annual Rating Matrix</title>
   <!-- Google Fonts and Font Awesome for icons -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -88,34 +87,93 @@
 <!--  -->
 
 <div class="dashboard">
-   <div class="epfpage-shellcontainer-ux2025">
+<div class="arm-container-main">
+    <div class="arm-header-main">
+      <span class="arm-breadcrumb-text">Home / PMS / Annual Rating Matrix</span>
+      <div class="arm-title-year-bar">
+        Annual Rating Matrix for the year of <span class="arm-title-year">2024</span>
+      </div>
+    </div>
 
-    <!-- breadcrumb (exact content from your image) -->
-    <nav class="epfpage-breadcrumbrow-ux2025" aria-label="breadcrumb">
-      <a class="epfpage-breadcrumblink-ux2025" href="#">Home</a>
-      <span aria-hidden="true">/</span>
-      <span class="epfpage-breadcrumbactive-ux2025">Employee Provident Fund</span>
-    </nav>
+    <div class="arm-card-matrix">
 
-    <!-- main card (the big bordered area with centered CTA) -->
-    <section class="epfpage-ctacardwrap-ux2025" aria-labelledby="epf-ctatitle-ux2025">
-      <div class="epfpage-leftcontent-ux2025">
-        <div class="epfpage-ctawrapper-ux2025">
-        <h2>Click the button to open the <span style="color: #36a1ff;">PF Membership</span> application form.</h2>
-            <a class="epfpage-cta-button-ux2025" id="epf-ctatitle-ux2025"  href="application-for-pf-membership.html">
-            <span class="epfpage-ctaicon-ux2025" aria-hidden="true">✍️</span>
-            <span>Application for PF Membership</span>
-          </a>
-        </div>
+      <!-- PMS Rating -->
+      <div class="arm-section-card">
+        <div class="arm-section-title">PMS Rating</div>
+        <table class="arm-rating-table">
+          <thead>
+            <tr>
+              <th class="arm-table-header">Achievement</th>
+              <th class="arm-table-header">Rate</th>
+              <th class="arm-table-header">Weighted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="arm-table-cell">Annual Evaluation 2024</td>
+              <td class="arm-table-cell"></td>
+              <td class="arm-table-cell">0.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="arm-table-cell-footer">Annual</td>
+              <td></td>
+              <td class="arm-table-cell-footer">0.00</td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
 
-      <aside class="epfpage-rightillustration-ux2025" aria-hidden="true">
-        <img style="width: 100%;" src="./assets/image/14602281_5480338.png" alt="">       
-      </aside>
-    </section>
+      <!-- 360 Degree Rating -->
+      <div class="arm-section-card">
+        <div class="arm-section-title">360 Degree Rating</div>
+        <table class="arm-rating-table">
+          <thead>
+            <tr>
+              <th class="arm-table-header">Achievement</th>
+              <th class="arm-table-header">Final Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="arm-table-cell">Jan 24 to Dec 24</td>
+              <td class="arm-table-cell">0.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <!-- Cumulative Rating -->
+      <div class="arm-section-card">
+        <div class="arm-section-title">Cumulative Rating</div>
+        <table class="arm-rating-table">
+          <thead>
+            <tr>
+              <th class="arm-table-header">Achievement</th>
+              <th class="arm-table-header">Final Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="arm-table-cell">PMS (80%)</td>
+              <td class="arm-table-cell">0.00</td>
+            </tr>
+            <tr>
+              <td class="arm-table-cell">360 Degree (20%)</td>
+              <td class="arm-table-cell">0.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="arm-table-cell-footer"></td>
+              <td class="arm-table-cell-footer">0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
 
-
+    </div>
   </div>
 </div>
  <!--  -->

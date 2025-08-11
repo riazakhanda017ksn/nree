@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Page title -->
-  <title>Employee Provident Fund</title>
-
+  <title>Personal File</title>
   <!-- Google Fonts and Font Awesome for icons -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -35,13 +34,15 @@
 
       <div class="sidebar-link">
         <!-- Sidebar navigation links -->
-             <a href="index.html" class="gap active">
+       
+          <a href="index.html" class="gap space">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
+
         <a href="myprofile.html" class="gap space">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
-     <a href="personal-file.html" class="space">
+        <a href="#" class="gap active">
           <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
         </a>
 
@@ -88,36 +89,41 @@
 <!--  -->
 
 <div class="dashboard">
-   <div class="epfpage-shellcontainer-ux2025">
-
-    <!-- breadcrumb (exact content from your image) -->
-    <nav class="epfpage-breadcrumbrow-ux2025" aria-label="breadcrumb">
-      <a class="epfpage-breadcrumblink-ux2025" href="#">Home</a>
-      <span aria-hidden="true">/</span>
-      <span class="epfpage-breadcrumbactive-ux2025">Employee Provident Fund</span>
-    </nav>
-
-    <!-- main card (the big bordered area with centered CTA) -->
-    <section class="epfpage-ctacardwrap-ux2025" aria-labelledby="epf-ctatitle-ux2025">
-      <div class="epfpage-leftcontent-ux2025">
-        <div class="epfpage-ctawrapper-ux2025">
-        <h2>Click the button to open the <span style="color: #36a1ff;">PF Membership</span> application form.</h2>
-            <a class="epfpage-cta-button-ux2025" id="epf-ctatitle-ux2025"  href="application-for-pf-membership.html">
-            <span class="epfpage-ctaicon-ux2025" aria-hidden="true">✍️</span>
-            <span>Application for PF Membership</span>
-          </a>
-        </div>
+        <div class="personalfilesection__container">
+    <div class="personalfilesection__breadcrumbs">
+      <span class="personalfilesection__breadcrumbs-item">Home</span>
+      <span class="personalfilesection__breadcrumbs-sep">/</span>
+      <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">Personal Files</span>
+    </div>
+    <div class="personalfilesection__card">
+      <div class="personalfilesection__card-header">
+        <span class="personalfilesection__card-title">Personal Files of: Aleya Aktar</span>
       </div>
-
-      <aside class="epfpage-rightillustration-ux2025" aria-hidden="true">
-        <img style="width: 100%;" src="./assets/image/14602281_5480338.png" alt="">       
-      </aside>
-    </section>
-
-
-
+      <table class="personalfilesection__table">
+        <thead>
+          <tr>
+            <th class="personalfilesection__table-th">No.</th>
+            <th class="personalfilesection__table-th">Category</th>
+            <th class="personalfilesection__table-th">File</th>
+            <th class="personalfilesection__table-th">Upload Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Empty state -->
+          <tr>
+            <td class="personalfilesection__table-td personalfilesection__table-td--empty" colspan="4">
+              <div class="personalfilesection__table-empty">
+                <span class="personalfilesection__table-empty-icon">📂</span>
+                <span class="personalfilesection__table-empty-text">No files uploaded yet.</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
+
  <!--  -->
 
    

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Training & Development Plan</title>
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+             <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+     <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+         <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="dashboard">
+   <div class="application_wide_main_layout_container_wrapper">
+        <div class="top_level_application_header_section_area">
+            <h1 class="main_page_header_display_title_text">Identify the training/development need</h1>
+            <div class="header_date_information_range_details">
+                For the Period of : Jan 2024 to Dec 2024 (2024)<br>
+                Start Date: 01-01-2024, End Date: 31-12-2024
+            </div>
+        </div>
+
+        <!-- Employee and Boss Info -->
+        <div class="content_area_section_block_wrapper">
+            <div class="form_input_fields_grid_layout">
+                <div class="form_single_input_group_element">
+                    <label for="employeeName" class="form_input_label_description_text">Employee Name:</label>
+                    <input type="text" id="employeeName" class="form_input_text_data_field" value="Aleya Aktar" readonly>
+                </div>
+                <div class="form_single_input_group_element">
+                    <label for="bossName" class="form_input_label_description_text">Boss Name:</label>
+                    <input type="text" id="bossName" class="form_input_text_data_field" value="Jalal Ahmed" readonly>
+                </div>
+                <div class="form_single_input_group_element">
+                    <label for="currentRole" class="form_input_label_description_text">Current Role:</label>
+                    <input type="text" id="currentRole" class="form_input_text_data_field" value="General Manager" readonly>
+                </div>
+                <div class="form_single_input_group_element">
+                    <label for="bossCurrentRole" class="form_input_label_description_text">Boss Current Role:</label>
+                    <input type="text" id="bossCurrentRole" class="form_input_text_data_field" value="Senior Executive Director" readonly>
+                </div>
+                <div class="form_single_input_group_element">
+                    <label for="roleStartDate" class="form_input_label_description_text">Current Role Start Date:</label>
+                    <input type="text" id="roleStartDate" class="form_input_text_data_field" value="09-01-2022" readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Competencies -->
+        <div class="content_area_section_block_wrapper">
+            <h2 class="section_content_area_heading_title">Competencies</h2>
+            <div class="responsive_table_container">
+            <table class="data_display_table_structure_layout max-width">
+                <thead>
+                    <tr>
+                        <th>Competency Strengths</th>
+                        <th>Competency Development Areas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <textarea class="form_multi_line_text_area_input form_input_text_data_field" placeholder="List strengths..."></textarea>
+                        </td>
+                        <td>
+                            <textarea class="form_multi_line_text_area_input form_input_text_data_field" placeholder="List development areas..."></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <!-- 2. Current Role Development Plans -->
+        <div class="content_area_section_block_wrapper">
+            <h2 class="section_content_area_heading_title">Current Role Development Plans</h2>
+            <p class="form_input_label_description_text" style="margin-bottom: 1rem;">
+                For current role proficiency: (List action plans to further utilize strengths and address development needs; focus on skills (including language skills), knowledge and experiences, as well as functional and behavioral competencies)
+            </p>
+            <div class="responsive_table_container">
+                <table class="data_display_table_structure_layout max-width">
+                <thead>
+                    <tr>
+                        <th>Underutilized Strengths</th>
+                        <th>Activity Options</th>
+                        <th>Activity Description</th>
+                        <th>From</th>
+                        <th>To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                    </tr>
+                    <tr>
+                        <td>Development Obj/Targets</td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <!-- 3. Career Aspirations -->
+        <div class="content_area_section_block_wrapper">
+            <h2 class="section_content_area_heading_title">Career Aspirations</h2>
+            <div class="form_single_input_group_element">
+                <label for="fiveYearsAimingPoint" class="form_input_label_description_text">Five years aiming point:</label>
+                <select id="fiveYearsAimingPoint" class="form_dropdown_selection_field">
+                    <option value="">Select an aiming point</option>
+                    <option value="manager">Manager</option>
+                    <option value="senior-manager">Senior Manager</option>
+                    <option value="director">Director</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 4. Longer-Term Development Plans -->
+        <div class="content_area_section_block_wrapper">
+            <h2 class="section_content_area_heading_title">Longer-Term Development Plans</h2>
+            <p class="form_input_label_description_text" style="margin-bottom: 1rem;">
+                In preparation for next moves and to reach aiming point
+            </p>
+            <div class="responsive_table_container">
+            <table class="data_display_table_structure_layout max-width">
+                <thead>
+                    <tr>
+                        <th>Development Obj/Targets</th>
+                        <th>Activity Options</th>
+                        <th>Activity Description</th>
+                        <th>From</th>
+                        <th>To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><textarea class="form_multi_line_text_area_input form_input_text_data_field"></textarea></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                        <td><input type="date" class="form_input_text_data_field"></td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <button type="submit" class="action_trigger_submit_button_style">Submit</button>
+    </div>
+</div>
+ <!--  -->
+
+   
+
+<!-- JavaScript to toggle sidebar visibility -->
+  <script>
+ function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+     function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  </script>
+</body>
+</html>

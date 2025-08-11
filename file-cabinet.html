@@ -40,7 +40,7 @@
         <a href="myprofile.html" class="gap space">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
-        <a href="#" class="space">
+     <a href="personal-file.html" class="space">
           <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
         </a>
 
@@ -85,41 +85,37 @@
       </div>
 
 <!--  -->
-
 <div class="dashboard">
-        <div class="personalfilesection__container">
-    <div class="personalfilesection__breadcrumbs">
-      <span class="personalfilesection__breadcrumbs-item">Home</span>
-      <span class="personalfilesection__breadcrumbs-sep">/</span>
-      <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">Personal Files</span>
+    <div class="filecabinetpage__outermost-wrapper-container">
+    <h1 class="filecabinetpage__page-heading-title-text">File Cabinet</h1>
+
+    <div class="filecabinetpage__search-and-actions-container">
+        <input type="text" placeholder="Search files..." class="filecabinetpage__search-input-textfield" />
+        <button class="filecabinetpage__button-add-new-file">+ Add New File</button>
     </div>
-    <div class="personalfilesection__card">
-      <div class="personalfilesection__card-header">
-        <span class="personalfilesection__card-title">Personal Files of: Aleya Aktar</span>
-      </div>
-      <table class="personalfilesection__table">
-        <thead>
-          <tr>
-            <th class="personalfilesection__table-th">No.</th>
-            <th class="personalfilesection__table-th">Category</th>
-            <th class="personalfilesection__table-th">File</th>
-            <th class="personalfilesection__table-th">Upload Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Empty state -->
-          <tr>
-            <td class="personalfilesection__table-td personalfilesection__table-td--empty" colspan="4">
-              <div class="personalfilesection__table-empty">
-                <span class="personalfilesection__table-empty-icon">📂</span>
-                <span class="personalfilesection__table-empty-text">No files uploaded yet.</span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div class="filecabinetpage__files-listing-grid-container">
+        <div class="filecabinetpage__single-file-card-container">
+            <div class="filecabinetpage__file-icon-thumbnail">📄</div>
+            <div class="filecabinetpage__file-name-text">Project Proposal.pdf</div>
+            <div class="filecabinetpage__file-meta-info">Uploaded: 10 Aug 2025 • 2.4MB</div>
+            <div class="filecabinetpage__file-action-buttons-container">
+                <button class="filecabinetpage__file-button-download">Download</button>
+                <button class="filecabinetpage__file-button-delete">Delete</button>
+            </div>
+        </div>
+
+        <div class="filecabinetpage__single-file-card-container">
+            <div class="filecabinetpage__file-icon-thumbnail">🖼️</div>
+            <div class="filecabinetpage__file-name-text">TeamPhoto.png</div>
+            <div class="filecabinetpage__file-meta-info">Uploaded: 8 Aug 2025 • 1.1MB</div>
+            <div class="filecabinetpage__file-action-buttons-container">
+                <button class="filecabinetpage__file-button-download">Download</button>
+                <button class="filecabinetpage__file-button-delete">Delete</button>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 </div>
 
  <!--  -->

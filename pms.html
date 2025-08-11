@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Page title -->
-  <title>Employee Provident Fund</title>
-
+  <title>PMS</title>
   <!-- Google Fonts and Font Awesome for icons -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -88,34 +87,82 @@
 <!--  -->
 
 <div class="dashboard">
-   <div class="epfpage-shellcontainer-ux2025">
+    <div class="pmsdashboard__container" role="main" aria-label="Performance Management System Dashboard">
+    <!-- Breadcrumb -->
+    <div class="pmsdashboard__breadcrumbs">
+      <strong>Home</strong> / Performance Management System
+    </div>
 
-    <!-- breadcrumb (exact content from your image) -->
-    <nav class="epfpage-breadcrumbrow-ux2025" aria-label="breadcrumb">
-      <a class="epfpage-breadcrumblink-ux2025" href="#">Home</a>
-      <span aria-hidden="true">/</span>
-      <span class="epfpage-breadcrumbactive-ux2025">Employee Provident Fund</span>
-    </nav>
-
-    <!-- main card (the big bordered area with centered CTA) -->
-    <section class="epfpage-ctacardwrap-ux2025" aria-labelledby="epf-ctatitle-ux2025">
-      <div class="epfpage-leftcontent-ux2025">
-        <div class="epfpage-ctawrapper-ux2025">
-        <h2>Click the button to open the <span style="color: #36a1ff;">PF Membership</span> application form.</h2>
-            <a class="epfpage-cta-button-ux2025" id="epf-ctatitle-ux2025"  href="application-for-pf-membership.html">
-            <span class="epfpage-ctaicon-ux2025" aria-hidden="true">✍️</span>
-            <span>Application for PF Membership</span>
-          </a>
-        </div>
+    <!-- Approvers Info -->
+    <section class="pmsdashboard__approvers" aria-label="Approvers Information">
+      <div class="pmsdashboard__approver">
+        First Approver:
+        <span>Jalal Ahmed (005080)</span>
       </div>
-
-      <aside class="epfpage-rightillustration-ux2025" aria-hidden="true">
-        <img style="width: 100%;" src="./assets/image/14602281_5480338.png" alt="">       
-      </aside>
+      <div class="pmsdashboard__approver">
+        Second Approver:
+        <span>Sajid Azad (3805)</span>
+      </div>
     </section>
 
+    <!-- Grid Panels -->
+    <section class="pmsdashboard__grid" aria-label="Performance Management Sections">
+      <!-- PMS Year 2024 -->
+      <article class="pmsdashboard__panel pmsdashboard__panel--blue" aria-labelledby="pms2024-title">
+        <div class="pmsdashboard__panel-header">
+          <h2 class="pmsdashboard__panel-header-title" id="pms2024-title">PMS Year: 2024</h2>
+          <a href="annual-rating-matrix.html" style="text-decoration: none;"><button class="pmsdashboard__panel-header-btn" type="button">Annual Rating Matrix</button></a>
+        </div>
+        <div class="pmsdashboard__card" role="region" aria-label="Annual Evaluation 2024">
+          <div class="pmsdashboard__card-title">
+            Annual Evaluation 2024
+            <span class="pmsdashboard__card-dates">Start: 01-01-2024 | End: 30-06-2024</span>
+          </div>
+          <a style="text-decoration: none;" href="start-po.html"><button class="pmsdashboard__action-btn pmsdashboard__action-btn--green" type="button">Your PO (Not Started)</button></a>
+        </div>
+      </article>
 
+         <!-- 360 Degree Feedback -->
+      <article class="pmsdashboard__panel pmsdashboard__panel--navy" aria-labelledby="feedback-title">
+        <h2 class="pmsdashboard__panel-title-alt" id="feedback-title">360 Degree Feedback</h2>
+        <div class="pmsdashboard__card" role="region" aria-label="360 Degree Feedback Date Range">
+          <div class="pmsdashboard__card-title">
+            Jan 24 to Dec 24 (2024)
+            <span class="pmsdashboard__card-dates">Start: 01-01-2024 | End: 31-12-2024</span>
+          </div>
+        </div>
+      </article>
+      <!--  -->
 
+      <!-- PMS Year 2023 -->
+      <article class="pmsdashboard__panel pmsdashboard__panel--blue" aria-labelledby="pms2023-title">
+        <div class="pmsdashboard__panel-header">
+          <h2 class="pmsdashboard__panel-header-title" id="pms2023-title">PMS Year: 2023</h2>
+         <a href="annual-rating-matrix-2023.html"> <button class="pmsdashboard__panel-header-btn" type="button">Annual Rating Matrix</button></a>
+        </div>
+        <div class="pmsdashboard__card" role="region" aria-label="Annual Evaluation 2023">
+          <div class="pmsdashboard__card-title">
+            Annual Evaluation 2023
+            <span class="pmsdashboard__card-dates">Start: 01-07-2023 | End: 31-12-2023</span>
+          </div>
+          <a href="start-po-2023.html"><button class="pmsdashboard__action-btn pmsdashboard__action-btn--yellow" type="button">Your PO (Edit / Submit PO)</button></a>
+        </div>
+      </article>
+
+   
+
+      <!-- Employee Development Planning -->
+      <article class="pmsdashboard__panel pmsdashboard__panel--green" aria-labelledby="edp-title">
+        <h2 class="pmsdashboard__panel-title-alt" id="edp-title">Employee Development Planning</h2>
+        <div class="pmsdashboard__card" role="region" aria-label="Employee Development Planning Date Range">
+          <div class="pmsdashboard__card-title">
+            Jan 2024 to Dec 2024 (2024)
+            <span class="pmsdashboard__card-dates">Start: 01-01-2024 | End: 31-12-2024</span>
+          </div>
+          <a href="identify-the-training.html" style="text-decoration: none;"><button class="pmsdashboard__action-btn pmsdashboard__action-btn--lime" type="button">Your EDP (Submit your PO)</button></a>
+        </div>
+      </article>
+    </section>
   </div>
 </div>
  <!--  -->
