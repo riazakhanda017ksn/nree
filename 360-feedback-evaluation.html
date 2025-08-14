@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Edp of Appraisee</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+        <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+
+                   <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile x">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+          <!-- Optional settings icon (currently commented out) -->
+          <!-- 
+          <a href="#" class="setting">
+            <img src="./assets/image/setting.svg" alt="">
+          </a>
+          -->
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+         <div class="dashboard">
+              <div class="assessment-360-root-container">
+
+    <!-- header -->
+    <div class="assessment-360-page-header-row">
+      <div class="assessment-360-header-title-text">Submit 360 Feedback as Supervisor</div>
+      <div class="assessment-360-breadcrumb-text">Home / PMS / Submit Your 360 Feedback as Superviser</div>
+    </div>
+
+    <!-- period -->
+    <div class="assessment-360-period-card">
+      <strong>for the Period of :</strong> Quarter-4 &nbsp; <span style="opacity:.9">Start Date: 01-01-2024, End Date: 31-12-2024</span>
+    </div>
+
+    <div class="assessment-360-main-card">
+
+      <!-- note -->
+      <div class="assessment-360-note-box">
+        Please complete the evaluation form, based on the interaction you have had personally or have directly observed.
+        Check "Not related" if you do not feel that you have enough evidence for commenting on a particular question.
+      </div>
+
+      <!-- employee details -->
+      <div class="assessment-360-employee-grid">
+        <div class="assessment-360-employee-item">
+          <div class="assessment-360-employee-label">Employee Name</div>
+          <div class="assessment-360-employee-value">Appraisee</div>
+        </div>
+        <div class="assessment-360-employee-item">
+          <div class="assessment-360-employee-label">Department</div>
+          <div class="assessment-360-employee-value">Procurement</div>
+        </div>
+        <div class="assessment-360-employee-item">
+          <div class="assessment-360-employee-label">Designation</div>
+          <div class="assessment-360-employee-value">Deputy General Manager</div>
+        </div>
+        <div class="assessment-360-employee-item">
+          <div class="assessment-360-employee-label">Appraiser / Supervisor</div>
+          <div class="assessment-360-employee-value">Appraiser</div>
+        </div>
+        <div class="assessment-360-employee-item">
+          <div class="assessment-360-employee-label">Period</div>
+          <div class="assessment-360-employee-value">Quarter-4 (2024)</div>
+        </div>
+      </div>
+
+      <!-- scoring area -->
+      <div class="assessment-360-scoring-grid">
+
+        <!-- left: main indicators table -->
+        <div class="assessment-360-table-card">
+          <div class="assessment-360-table-header">Scoring: Core Competencies & Parameters</div>
+
+          <!-- HORIZONTAL SCROLL WRAPPER -->
+          <div class="assessment-360-table-scroll-wrapper" role="region" aria-label="Scoring table horizontally scrollable">
+            <table class="assessment-360-table" aria-describedby="scoring-description">
+              <thead>
+                <tr>
+                  <th style="width:48px">#</th>
+                  <th style="width:360px">Objectives / KPI</th>
+                  <th style="min-width:320px">Parameters</th>
+                  <th style="width:130px">Rating</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <!-- Objective 1 header row -->
+                <tr class="assessment-360-objective-row">
+                  <td>1.</td>
+                  <td>Integrity <span style="font-weight:600;color:#0f766e"> (20%)</span></td>
+                  <td colspan="2"></td>
+                </tr>
+
+                <!-- rows under Integrity -->
+                <tr>
+                  <td>1.1</td>
+                  <td class="assessment-360-kpi-row">Has high ethical standards <span style="font-weight:600;color:#6b7280">(30%)</span></td>
+                  <td>-</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-1-1">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1.2</td>
+                  <td class="assessment-360-kpi-row">Has a high level of integrity <span style="font-weight:600;color:#6b7280">(40%)</span></td>
+                  <td>Demonstrates fair accountability, avoids scapegoating and promotes constructive problem-solving.</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-1-2">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>1.3</td>
+                  <td class="assessment-360-kpi-row">Is honest in dealing with others <span style="font-weight:600;color:#6b7280">(30%)</span></td>
+                  <td>-</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-1-3">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- Objective 2 header row -->
+                <tr class="assessment-360-objective-row">
+                  <td>2.</td>
+                  <td>Responsibility <span style="font-weight:600;color:#0f766e"> (16%)</span></td>
+                  <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                  <td>2.1</td>
+                  <td class="assessment-360-kpi-row">Accepts responsibility for their own mistakes. <span style="font-weight:600;color:#6b7280">(50%)</span></td>
+                  <td>Shows ownership of errors, corrects them proactively and learns from mistakes.</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-2-1">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2.2</td>
+                  <td class="assessment-360-kpi-row">Does not blame other people for mistakes/errors they have not made. <span style="font-weight:600;color:#6b7280">(30%)</span></td>
+                  <td>-</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-2-2">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2.3</td>
+                  <td class="assessment-360-kpi-row">Is open to discussing work problems/difficulties <span style="font-weight:600;color:#6b7280">(20%)</span></td>
+                  <td>Willingness to surface issues, seek help and collaborate to resolve operational or team problems.</td>
+                  <td>
+                    <select class="assessment-360-select-rating" aria-label="rating-2-3">
+                      <option value="">Select</option>
+                      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+                      <option>Not related</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- more objectives/rows can be added similarly -->
+              </tbody>
+            </table>
+          </div>
+          <!-- end scroll wrapper -->
+
+        </div>
+
+        <!-- right: scoring scale -->
+        <div class="assessment-360-scale-card" role="region" aria-labelledby="scaleHeading">
+          <div id="scaleHeading" class="assessment-360-scale-header">Select Rating Based on</div>
+          <table class="assessment-360-scale-table" aria-hidden="false">
+            <tbody>
+              <tr><td style="width:40px"><strong>5</strong></td><td>Always (Consistently)</td></tr>
+              <tr><td><strong>4</strong></td><td>Almost always (Usually)</td></tr>
+              <tr><td><strong>3</strong></td><td>Sometimes (Occasionally)</td></tr>
+              <tr><td><strong>2</strong></td><td>Rarely</td></tr>
+              <tr><td><strong>1</strong></td><td>Almost never / Not related</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div> <!-- end scoring grid -->
+
+      <!-- footer -->
+      <div class="assessment-360-footer-row">
+        <button type="button" class="assessment-360-submit-button">Submit</button>
+      </div>
+
+    </div> <!-- end main card -->
+
+  </div>
+         </div>
+     <!--  -->
+
+
+=
+<!-- script for chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!--  -->
+  <!-- JavaScript to toggle sidebar visibility -->
+  <script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+        function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  
+      // chart js
+        const dataSets = [
+          { id: 'chart1', data: [18, 18] },  // Annual Leave
+          { id: 'chart2', data: [10, 10] },  // Casual Leave
+          { id: 'chart3', data: [14, 14] },  // Examination Leave
+    
+        ];
+
+        dataSets.forEach(set => {
+          new Chart(document.getElementById(set.id), {
+            type: 'doughnut',
+            data: {
+              labels: ['Consumed', 'Available'],
+              datasets: [{
+                data: set.data,
+                backgroundColor: ['#007dff', '#123A6B'], // Consumed, Available
+                borderWidth: 0
+              }]
+            },
+            options: {
+              cutout: '70%',
+              plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+              }
+            }
+          });
+        });
+  </script>
+</body>
+</html>

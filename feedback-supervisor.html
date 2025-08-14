@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Feedback As Suppervisor</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!--  -->
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+        <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+
+                   <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile x">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+          <!-- Optional settings icon (currently commented out) -->
+          <!-- 
+          <a href="#" class="setting">
+            <img src="./assets/image/setting.svg" alt="">
+          </a>
+          -->
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+     <div class="dashboard">
+        <div class="modern-appraisal-main-container-2025">
+    <div class="modern-appraisal-main-title-header-2025">360° Feedback Appraisal Ratings</div>
+    <div class="supervisor">
+        <table class="modern-appraisal-data-table-2025">
+        <thead>
+            <tr>
+                <th>Objectives</th>
+                <th>KPI</th>
+                <th>Parameters</th>
+                <th>Appraisee Rating</th>
+                <th>Supervisor Rating</th>
+                <th>Colleague Rating</th>
+                <th>Peers Rating</th>
+                <th>Customer Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Integrity -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>1</td>
+                <td>Integrity (20%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>1.1</td>
+                <td>Has high ethical standards (30%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>1.2</td>
+                <td>Has a high level of integrity (40%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">4</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>1.3</td>
+                <td>Is honest in dealing with others (30%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Responsibility -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>2</td>
+                <td>Responsibility (16%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>Accepts responsibility for their own mistakes (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>2.2</td>
+                <td>Does not blame others for mistakes (30%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>2.3</td>
+                <td>Is open to discussing work problems (20%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Fostering Integration -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>3</td>
+                <td>Fostering Integration & Teamwork (16%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>Develops and promotes relationships (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">4</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>3.2</td>
+                <td>Deals constructively with conflict (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Communicating -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>4</td>
+                <td>Communicating Effectively (16%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>4.1</td>
+                <td>Is a clear, effective speaker (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>4.2</td>
+                <td>Is a good communicator (30%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>4.3</td>
+                <td>Communicates their point of view (20%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Energy & Drive -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>5</td>
+                <td>Energy & Drive (16%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>5.1</td>
+                <td>Ability to get best out of people (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">3</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>5.2</td>
+                <td>Motivates others (30%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>5.3</td>
+                <td>High levels of energy & activity (20%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Eager to Learn -->
+            <tr class="modern-appraisal-kpi-section-row-2025">
+                <td>6</td>
+                <td>Eager to Learn (16%)</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>6.1</td>
+                <td>Seeks new ideas & applications (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+            <tr>
+                <td>6.2</td>
+                <td>Seeks feedback & new challenges (50%)</td>
+                <td></td>
+                <td class="modern-appraisal-rating-number-2025">2</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+                <td class="modern-appraisal-rating-checkmark-2025">✓</td>
+            </tr>
+
+            <!-- Final Rating -->
+            <tr class="modern-appraisal-final-rating-row-2025">
+                <td colspan="8">Final Rating</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+     </div>
+     <!--  -->
+
+
+
+<!-- js for boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- script for chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!--  -->
+  <!-- JavaScript to toggle sidebar visibility -->
+  <script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+        function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  
+      // chart js
+        const dataSets = [
+          { id: 'chart1', data: [18, 18] },  // Annual Leave
+          { id: 'chart2', data: [10, 10] },  // Casual Leave
+          { id: 'chart3', data: [14, 14] },  // Examination Leave
+    
+        ];
+
+        dataSets.forEach(set => {
+          new Chart(document.getElementById(set.id), {
+            type: 'doughnut',
+            data: {
+              labels: ['Consumed', 'Available'],
+              datasets: [{
+                data: set.data,
+                backgroundColor: ['#007dff', '#123A6B'], // Consumed, Available
+                borderWidth: 0
+              }]
+            },
+            options: {
+              cutout: '70%',
+              plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+              }
+            }
+          });
+        });
+  </script>
+</body>
+</html>

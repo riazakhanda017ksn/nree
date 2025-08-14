@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Edp of Appraisee</title>
+
+  <!-- Google Fonts and Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+<body>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <!-- Company logo -->
+        <img src="./assets/image/logo_White 1.png" alt="">
+        <!-- Close button (for mobile or toggle) -->
+        <span class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+
+      <div class="sidebar-link">
+        <!-- Sidebar navigation links -->
+        <a href="index.html" class="gap active">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+        </a>
+        <a href="myprofile.html" class="gap space">
+          <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
+        </a>
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+        </a>
+
+        <!-- Logout button at bottom -->
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
+          <img src="./assets/image/logoout.svg" alt=""> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main" id="main">
+      
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Hamburger icon for sidebar toggle -->
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Color logo -->
+        <!-- <div class="logo">
+          <img src="./assets/image/color-logo.png" alt="">
+        </div> -->
+
+        <!-- Right side (notifications and user info) -->
+        <div class="right">
+          <a href="#" style="margin-right: 7px;">
+            <img src="./assets/image/notification-line.svg" alt="">
+          </a>
+
+                   <!-- Click for profile with dropdown -->
+<div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile x">
+    <img style="width: 50px;" src="./assets/image/ama.png" alt="">
+    <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
+  </div>
+  <div class="dropdown-menu" id="profileDropdown">
+    <a href="#">👤 View Profile</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+
+          <!-- Optional settings icon (currently commented out) -->
+          <!-- 
+          <a href="#" class="setting">
+            <img src="./assets/image/setting.svg" alt="">
+          </a>
+          -->
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+        <div class="dashboard">
+            <div class="view-pmd-main-container">
+  
+  <div class="view-pmd-header">
+    <div class="view-pmd-title">View PMD of Appraisee_Corporate</div>
+    <div class="view-pmd-meta">Department: Procurement | Designation: Senior General Manager</div>
+    <div class="view-pmd-meta">For the Period of: Quarter-4 | Start Date: 01-07-2024 | End Date: 30-09-2024</div>
+  </div>
+
+  <div class="view-pmd-table-wrapper">
+    <table class="view-pmd-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Performance Objectives</th>
+          <th>Performance Measures / KPI</th>
+          <th>Targets</th>
+          <th>Wtg %</th>
+          <th>Achievement</th>
+          <th>Rating</th>
+          <th>Weighted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="view-pmd-section-title">
+          <td>1</td>
+          <td>Completing Recruitment Process</td>
+          <td colspan="6">
+            <table class="view-pmd-sub-table" width="100%">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>PM/KPI</th>
+                  <th>Target</th>
+                  <th>Wtg %</th>
+                  <th>Achievement</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Completing the recruitment cycle for POV position</td>
+                  <td>20 days</td>
+                  <td>70</td>
+                  <td>100</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Minimizing Hiring cost aligning with the budget</td>
+                  <td>5%</td>
+                  <td>30</td>
+                  <td>102</td>
+                  <td>4.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr class="view-pmd-section-title">
+          <td>2</td>
+          <td>Conducting training and module preparation</td>
+          <td colspan="6">
+            <table class="view-pmd-sub-table" width="100%">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>PM/KPI</th>
+                  <th>Target</th>
+                  <th>Wtg %</th>
+                  <th>Achievement</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Conducting management training for all employees</td>
+                  <td>20 class room training</td>
+                  <td>60</td>
+                  <td>105</td>
+                  <td>5.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Developing functional training module</td>
+                  <td>03 modules</td>
+                  <td>40</td>
+                  <td>100</td>
+                  <td>4.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="view-pmd-buttons">
+    <button class="view-pmd-btn-red">🔙 Send back to Appraiser</button>
+    <button class="view-pmd-btn-green">📩 Submit to HR</button>
+  </div>
+
+  <div class="view-pmd-comments">
+    <h3>💬 Comments</h3>
+    <table class="view-pmd-comments-table">
+      <thead>
+        <tr>
+          <th>Appraisee</th>
+          <th>First Appraiser</th>
+          <th>Second Appraiser</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+        </div>
+     <!--  -->
+
+<!-- script for chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!--  -->
+  <!-- JavaScript to toggle sidebar visibility -->
+  <script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.getElementById("main");
+
+    if (window.innerWidth <= 768) {
+      // Mobile: slide in/out
+      sidebar.classList.toggle("active");
+    } else {
+      // Desktop: hide/show
+      sidebar.classList.toggle("hidden");
+      if (sidebar.classList.contains("hidden")) {
+        main.style.width = "100%";
+      } else {
+        main.style.width = "";
+      }
+    }
+  }
+
+        function toggleDropdown() {
+    const dropdown = document.getElementById("profileDropdown");
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Click outside to close
+  document.addEventListener("click", function (e) {
+    const profile = document.querySelector(".user-profile-wrapper");
+    const dropdown = document.getElementById("profileDropdown");
+
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+  
+      // chart js
+        const dataSets = [
+          { id: 'chart1', data: [18, 18] },  // Annual Leave
+          { id: 'chart2', data: [10, 10] },  // Casual Leave
+          { id: 'chart3', data: [14, 14] },  // Examination Leave
+    
+        ];
+
+        dataSets.forEach(set => {
+          new Chart(document.getElementById(set.id), {
+            type: 'doughnut',
+            data: {
+              labels: ['Consumed', 'Available'],
+              datasets: [{
+                data: set.data,
+                backgroundColor: ['#007dff', '#123A6B'], // Consumed, Available
+                borderWidth: 0
+              }]
+            },
+            options: {
+              cutout: '70%',
+              plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+              }
+            }
+          });
+        });
+  </script>
+</body>
+</html>
