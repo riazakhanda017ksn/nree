@@ -326,7 +326,7 @@ h2.notification-text {
   border-radius: 0 0 20px 20px;
 }
 .profile-info-grid.x {
-    gap: 30px;
+    gap: 20px;
 }
 .profile-info-grid{
   display: grid;
@@ -383,7 +383,7 @@ h2.notification-text {
 .profile-small-card p {
   color: #A9A9A9;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 12.1px;
 }
 
 /* Last login message */
@@ -512,7 +512,7 @@ h2.notification-text {
     padding: 0;
 }
 .custom-container.background-change.add-color-blue {
-    background: #F6FAFD;
+    background: #e3f3ff;
     border: 1px solid #a9daff;
 }
 
@@ -2344,6 +2344,7 @@ button.dark-color.top-spacing {
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       padding: 30px;
+      padding-top: 15px !important;
       margin-top: 30px;
     }
 
@@ -2353,7 +2354,7 @@ button.dark-color.top-spacing {
       color: #004e92;
       border-bottom: 2px solid #e0e6ed;
       padding-bottom: 15px;
-      margin-top: 32px;
+      margin-top: 15px;
       margin-bottom: 8px;
     }
 
@@ -6627,8 +6628,7 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
     font-weight: 600;
     color: #000000;
     margin-bottom: 1.2rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px solid #e0e0e0;
+ 
     display: flex;
     align-items: center;
     text-align: left;
