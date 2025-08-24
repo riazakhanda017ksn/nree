@@ -2581,6 +2581,11 @@ grid-row-gap: 0px;
 
     /* Responsive */
     @media (max-width: 992px) {
+      .hr-management-card, .second-row-for-hr-management-card {
+  
+    grid-column-gap: 10px !important;
+   
+}
       .dashboard-grid {
    
     grid-template-columns: repeat(1, 1fr) !important;
