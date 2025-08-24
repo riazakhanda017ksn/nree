@@ -1575,7 +1575,7 @@ p.position-change-for-absolute {
 }
 button.button {
     font-size: 11px;
-    width: 102px;
+    width: 100%
 }
 .leave-request-table tbody td {
     background-color: #ffffff;
@@ -1717,6 +1717,29 @@ grid-column-gap: 15px;
 grid-row-gap: 0px;
 margin: 10px 0;
 }
+.checked{
+
+    background: #3acb8a33 !important;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 400;
+
+}
+.checked a{
+    color: #128b55 !important;
+
+}
+.bill-check {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: #a56bff !important;
+    background: #a56bff2b !important;
+}
+.bill-check a{
+    color: #a56bff !important;
+}
+
     /* Responsive Design */
     @media (max-width: 700px) {
 
@@ -1744,8 +1767,9 @@ margin: 10px 0;
 
 .info-value {
 
-    padding-left: 10px !important;
+    padding-left: 5px !important;
 }
+
 .custom-row {
     gap: 15px !important;
 }
@@ -2549,6 +2573,11 @@ grid-row-gap: 0px;
 
     /* Responsive */
     @media (max-width: 992px) {
+      .attendance-correction-form-group {
+    flex: 1 1 00px !important;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
           .employee-dashboard-main-container {
 
       width: 100% !important;
@@ -4751,8 +4780,8 @@ section.pfmembership-headersection-ux2025 strong {
     color: white;
     font-family: 'Varela Round', Arial, sans-serif;
     font-weight: 600;
-    font-size: 14px;
-    padding: 8px 22px;
+    font-size: 13px;
+    padding: 8px 17px;
     border-radius: 7px;
     cursor: pointer;
     box-shadow: none;
