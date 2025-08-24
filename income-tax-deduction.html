@@ -23,10 +23,10 @@
   <div class="dashboard-layout">
     
     <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
+   <div class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <!-- Company logo -->
-        <img src="./assets/image/logo_White 1.png" alt="">
+        <img src="./assets/image/logo.png" alt="">
         <!-- Close button (for mobile or toggle) -->
         <span class="close-btn" onclick="toggleSidebar()">
           <i class="fa-solid fa-xmark"></i>
@@ -34,20 +34,92 @@
       </div>
 
       <div class="sidebar-link">
-        <!-- Sidebar navigation links -->
-        <a href="index.html" class="gap active">
+       
+        <div class="sidebar-left-side-auto-content">
+                  <a href="index.html" class="gap space">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
-        <a href="myprofile.html" class="gap space">
+        <a href="dashboard.html" class="gap space ">
+          <span><img src="./assets/image/dashboard.svg" alt=""></span> Dashboard
+        </a>
+        <a href="myprofile.html" class="gap space ">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
-     <a href="personal-file.html" class="space">
-          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+
+        <a href="payroll.html" class="gap space active">
+          <span><img class="payroll-images" src="./assets/image/lets-icons_money-light.svg" alt=""></span> Payroll
         </a>
 
-        <!-- Logout button at bottom -->
-        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
-          <img src="./assets/image/logoout.svg" alt=""> Logout
+        <a href="pms.html" class="gap space " >
+          <span><img  src="./assets/image/mynaui_chart-line.svg" alt=""></span> PMS
+        </a>
+
+         <a href="leavemanagement.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_logout-circle-02.svg" alt=""></span> Leave Management
+        </a>
+
+
+          <a href="requitment.html" class="gap space">
+          <span><img  src="./assets/image/lucide_user-search.svg" alt=""></span> Requitment
+        </a>
+
+         <a href="mobile-bill-managemen.html" class="gap space">
+          <span><img  src="./assets/image/solar_bill-broken.svg" alt=""></span> Mobile Bill
+        </a>
+
+          <a href="attendence.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_co-present.svg" alt=""></span> Attendance
+        </a>
+
+           <a href="pf-membership.html" class="gap space">
+          <span><img  src="./assets/image/fund.svg" alt=""></span> PF Management
+        </a>
+    
+
+          <a href="probationers-progress.html" class="gap space">
+          <span><img  src="./assets/image/solar_chart-linear.svg" alt=""></span> Probationers Progress
+        </a>
+    
+   <a href="bill-management.html" class="gap space">
+          <span><img  src="./assets/image/bill.svg" alt=""></span> Bill Management
+        </a>
+    
+    
+   <a href="file-cabinet.html" class="gap space">
+          <span><img  src="./assets/image/file.svg" alt=""></span> File Cabinet
+        </a>
+    
+         <a href="meal-management.html" class="gap space">
+          <span><img  src="./assets/image/dx.svg" alt=""></span> Meal Management
+        </a>
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/files.svg" alt=""></span> Personal Files
+        </a>
+    </div>
+
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd"  >
+         <img style="width: 130px;" src="./assets/image/logo_White 1.png" alt="">
         </a>
       </div>
     </div>
@@ -96,6 +168,13 @@
 <!--  -->
 
 <div class="dashboard">
+  <div class="personalfilesection__breadcrumbs">
+    <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
+    <span class="personalfilesection__breadcrumbs-sep">/</span>
+    <span class="personalfilesection__breadcrumbs-item"><a href="payroll.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; ">Payroll</a></span>
+    <span class="personalfilesection__breadcrumbs-sep">/</span>
+    <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">Income Tax Deduction</span>
+  </div>
   <div class="custom-container background-change" style="margin: 0;">
         <div class="custom-section-title spacing-hide" style="border: none;">Income Tax Deduction 2025 - 2026
 </div>
@@ -276,6 +355,324 @@
     </div>
   </div>
   </div>
+
+
+   <div class="salary_data_section_content_block_wrapper">
+            <h2 class="salary_section_heading_title_text">Monthly Salary Data</h2>
+            <div class="monthly_salary_table_responsive_display_wrapper">
+                <table class="monthly_salary_data_grid_structure">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Salary Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_blue">
+                                        <svg class="svg_icon_base_style icon_color_blue" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    July 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_blue">
+                                        <svg class="svg_icon_base_style icon_color_blue" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_orange">
+                                        <svg class="svg_icon_base_style icon_color_orange" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    August 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_orange">
+                                        <svg class="svg_icon_base_style icon_color_orange" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_green">
+                                        <svg class="svg_icon_base_style icon_color_green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    September 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_green">
+                                        <svg class="svg_icon_base_style icon_color_green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_purple">
+                                        <svg class="svg_icon_base_style icon_color_purple" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    October 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_purple">
+                                        <svg class="svg_icon_base_style icon_color_purple" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_red">
+                                        <svg class="svg_icon_base_style icon_color_red" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    November 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_red">
+                                        <svg class="svg_icon_base_style icon_color_red" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_teal">
+                                        <svg class="svg_icon_base_style icon_color_teal" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    December 2025
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_teal">
+                                        <svg class="svg_icon_base_style icon_color_teal" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_blue">
+                                        <svg class="svg_icon_base_style icon_color_blue" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    January 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_blue">
+                                        <svg class="svg_icon_base_style icon_color_blue" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_orange">
+                                        <svg class="svg_icon_base_style icon_color_orange" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    February 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_orange">
+                                        <svg class="svg_icon_base_style icon_color_orange" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_green">
+                                        <svg class="svg_icon_base_style icon_color_green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    March 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_green">
+                                        <svg class="svg_icon_base_style icon_color_green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_purple">
+                                        <svg class="svg_icon_base_style icon_color_purple" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    April 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_purple">
+                                        <svg class="svg_icon_base_style icon_color_purple" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_red">
+                                        <svg class="svg_icon_base_style icon_color_red" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    May 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_red">
+                                        <svg class="svg_icon_base_style icon_color_red" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="monthly_salary_month_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_teal">
+                                        <svg class="svg_icon_base_style icon_color_teal" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM5 7V6h14v1H5z"/>
+                                        </svg>
+                                    </span>
+                                    June 2026
+                                </div>
+                            </td>
+                            <td>
+                                <div class="monthly_salary_amount_cell_display">
+                                    <span class="monthly_salary_icon_background icon_bg_teal">
+                                        <svg class="svg_icon_base_style icon_color_teal" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-11H7v2h4v1H7v2h4v1H7v2h6v-9z"/>
+                                        </svg>
+                                    </span>
+                                    0.00 TK
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status_button_base_style status_pending_button_style">Pending</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+   </div>
 
 </div>
  <!--  -->

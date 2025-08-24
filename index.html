@@ -1,107 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta tags for character encoding and responsiveness -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Page title -->
   <title>Pro-Edge Dashboard</title>
 
-  <!-- Google Fonts and Font Awesome for icons -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- boostrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <!--  -->
-</head>
+  </head>
 
 <body>
   <div class="dashboard-layout">
     
-    <!-- Sidebar Navigation -->
     <div class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <!-- Company logo -->
-        <img src="./assets/image/logo_White 1.png" alt="">
-        <!-- Close button (for mobile or toggle) -->
+        <img src="./assets/image/Artboard 1-8.png" alt="">
         <span class="close-btn" onclick="toggleSidebar()">
           <i class="fa-solid fa-xmark"></i>
         </span>
       </div>
 
       <div class="sidebar-link">
-        <!-- Sidebar navigation links -->
-        <a href="index.html" class="gap active">
+       
+        <div class="sidebar-left-side-auto-content">
+                  <a href="index.html" class="active">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
+
+        <a href="dashboard.html" class="gap space">
+          <span><img src="./assets/image/dashboard.svg" alt=""></span> Dashboard
+        </a>
+
         <a href="myprofile.html" class="gap space">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
-        <a href="personal-file.html" class="space">
-          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+
+        <a href="payroll.html" class="gap space">
+          <span><img class="payroll-images" src="./assets/image/lets-icons_money-light.svg" alt=""></span> Payroll
         </a>
 
-        <!-- Logout button at bottom -->
-        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
-          <img src="./assets/image/logoout.svg" alt=""> Logout
+        <a href="pms.html" class="gap space">
+          <span><img  src="./assets/image/mynaui_chart-line.svg" alt=""></span> PMS
+        </a>
+
+         <a href="leavemanagement.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_logout-circle-02.svg" alt=""></span> Leave Management
+        </a>
+
+
+          <a href="requitment.html" class="gap space">
+          <span><img  src="./assets/image/lucide_user-search.svg" alt=""></span> Requitment
+        </a>
+
+         <a href="mobile-bill-managemen.html" class="gap space">
+          <span><img  src="./assets/image/solar_bill-broken.svg" alt=""></span> Mobile Bill
+        </a>
+
+          <a href="attendence.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_co-present.svg" alt=""></span> Attendance
+        </a>
+
+           <a href="pf-membership.html" class="gap space">
+          <span><img  src="./assets/image/fund.svg" alt=""></span> PF Management
+        </a>
+    
+
+          <a href="probationers-progress.html" class="gap space">
+          <span><img  src="./assets/image/solar_chart-linear.svg" alt=""></span> Probationers Progress
+        </a>
+    
+   <a href="bill-management.html" class="gap space">
+          <span><img  src="./assets/image/bill.svg" alt=""></span> Bill Management
+        </a>
+    
+    
+   <a href="file-cabinet.html" class="gap space">
+          <span><img  src="./assets/image/file.svg" alt=""></span> File Cabinet
+        </a>
+    
+         <a href="meal-management.html" class="gap space">
+          <span><img  src="./assets/image/dx.svg" alt=""></span> Meal Management
+        </a>
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/files.svg" alt=""></span> Personal Files
+        </a>
+    </div>
+
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd"  >
+         <img style="width: 130px;" src="./assets/image/logo_White 1.png" alt="">
         </a>
       </div>
     </div>
 
-    <!-- Main Content Area -->
     <div class="main" id="main">
       
-      <!-- Top Navbar -->
       <div class="navbar">
-        <!-- Hamburger icon for sidebar toggle -->
         <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
-        <!-- Color logo -->
-        <!-- <div class="logo">
-          <img src="./assets/image/color-logo.png" alt="">
-        </div> -->
-
-        <!-- Right side (notifications and user info) -->
         <div class="right">
           <a href="#" style="margin-right: 7px;">
             <img src="./assets/image/notification-line.svg" alt="">
           </a>
 
-                   <!-- Click for profile with dropdown -->
-<div class="user-profile-wrapper" onclick="toggleDropdown()">
+                   <div class="user-profile-wrapper" onclick="toggleDropdown()">
   <div class="user-profile x">
     <img style="width: 50px;" src="./assets/image/ama.png" alt="">
     <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
   </div>
   <div class="dropdown-menu" id="profileDropdown">
     <a href="#">👤 View Profile</a>
-    <a href="#">🚪 Logout</a>
+    <a href="#" id="logout-link-dropdown">🚪 Logout</a>
   </div>
 </div>
 
-          <!-- Optional settings icon (currently commented out) -->
-          <!-- 
-          <a href="#" class="setting">
-            <img src="./assets/image/setting.svg" alt="">
-          </a>
-          -->
-        </div>
+          </div>
       </div>
 
-      <!-- Dashboard Content -->
       <div class="dashboard">
         <h3 class="dashboard-text">Dashboard</h3>
 
-        <div class="dashboard-grid ">
+        <div class="dashboard-grid x">
           
-          <!-- Welcome Card -->
           <div class="user-intro-card">
             <div class="card-first-part top-part">
               <div class="user-bg user-box-text ">
@@ -113,11 +160,9 @@
               </div>
             </div>
 
-            <!-- Middle section with profile info -->
             <div class="middle-content-of-profile x">
               <div class="profile-info-grid x">
 
-                <!-- Profile photo and role -->
                 <div class="profile-content profile-image user-profile-content">
                   <img src="./assets/image/ama.png
                   " alt="">
@@ -125,36 +170,30 @@
                   <span>Head of HR</span>
                 </div>
 
-                <!-- Leave balance card -->
                 <div class="profile-small-card text_resize">
                   <img src="./assets/image/out.svg" alt="">
                   <h4>12 Days</h4>
                   <p>Leave Balance</p>
                 </div>
 
-                <!-- Pending tasks card -->
                 <div class="profile-small-card text_resize">
                   <img src="./assets/image/calendar.svg" alt="">
                   <h4>03</h4>
-                  <p>Pending Tasks</p>
+                  <p>Days Used</p>
                 </div>
               </div>
 
-              <!-- Last login message -->
               <div class="flex-text logout-last-text">
                 <img src="./assets/image/cuida_alert-outline.svg" alt="" style="bottom:0">
                 <p>
-                  Last Login 2 days ago 
+                Welcome !  Last Login 2 days ago.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- HR Management Cards (2 Rows) -->
           <div class="card-column-container">
             <div class="hr-management-card text_bold">
-
-              <!-- Each item links to a different HR module -->
 
               <a href="dashboard.html">
                 <div class="hr-card-item">
@@ -195,7 +234,6 @@
               </a>
             </div>
 
-            <!-- Second row of HR cards -->
             <div class="second-row-for-hr-management-card text_bold">
                    <a href="attendence.html">
                 <div class="hr-card-item">
@@ -229,10 +267,10 @@
                 </div>
               </a>
 
-                 <a href="lanuch.html">
+                 <a href="meal-management.html">
                 <div class="hr-card-item">
                   <img src="./assets/image/bibimbap.png" alt="">
-                  <h3>Launch</h3>
+                  <h3>Meal Management</h3>
                 </div>
               </a>
             </div>
@@ -240,12 +278,10 @@
         </div>
       </div>
 
-      <!-- Notification Section -->
       <div class="notification-section">
         <h2 class="notification-text">Notification</h2>
         <div class="notifications">
-          <!-- leave management -->
-         <div class="rounded-container table-responsive height-management-item" style="margin: 0; padding-bottom: 10px;">
+          <div class="rounded-container table-responsive height-management-item" style="margin: 0; padding-bottom: 10px;">
           <h4 class="mb-4"> Leave Management Notification</h4>
           <div class="table-responsive">
             <table class="table align-middle text-center">
@@ -318,10 +354,7 @@
             </table>
           </div>
         </div> 
-        <!--  -->
-
-          <!-- leave management -->
-         <div class="rounded-container" style="margin: 0; padding-bottom: 10px;">
+        <div class="rounded-container" style="margin: 0; padding-bottom: 10px;">
           <h4 class="mb-4 bill-management"> Bill Management Notification</h4>
           <div class="table-responsive">
              <div class="flex-end-text">
@@ -329,40 +362,10 @@
              </div>
           </div>
         </div> 
-        <!--  -->
-
-          <!-- Each notification card represents a module or update -->
-          <!-- <div class="notification-item">
-            <h4>Probationers Progress</h4>
-            <img src="./assets/image/illustrator-1.png" alt="">
-            <a href="#">More <i class="fa-solid fa-arrow-right"></i></a>
-          </div> -->
-
-          <!-- <div class="notification-item">
-            <h4>Leave Management</h4>
-            <img src="./assets/image/illustrator-2.png" alt="">
-            <a href="#">All Employee's Leave Status <i class="fa-solid fa-arrow-right"></i></a>
-          </div> -->
-
-          <!-- <div class="notification-item">
-            <h4>Bill Management</h4>
-            <img src="./assets/image/undraw_fill-forms_npwp.png" alt="">
-            <a href="#">Approved Bill History <i class="fa-solid fa-arrow-right"></i></a>
-          </div> -->
-<!-- 
-          <div class="notification-item">
-            <h4>Attendance</h4>
-            <img src="./assets/image/illustrator-3.png" alt="">
-            <a href="#">More <i class="fa-solid fa-arrow-right"></i></a>
-          </div> -->
         </div>
       </div>
 
   
-      <!--  -->
-     
-
-             <!-- Full Width Modal -->
       <div class="modal fade" id="leaveModal" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
@@ -371,28 +374,20 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body"> 
-              <!-- table modal -->
-                <div class="custom-container background-change" style="margin: 32px 0; margin-top: 0;">
-        <div class="custom-section-title spacing-hide" style="border: none;">Employee Information</div>
+         <div class="custom-container background-change" style="margin: 0 !important;">
+        <div class="custom-section-title spacing-hide" style="border: none;">Employment Information</div>
         <div class="custom-row">
-          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
-            <div class="custom-info-group">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none; width: 100% !important;">
+            <div class="custom-info-group emplyee-info-bg-change span-five-hundred">
               <div class="info-row">
                 <div class="info-label">
-                  <img src="./assets/image/employee id 1 1.png" alt="Employee ID">
-                  <span>Employee ID</span>
+                  <img src="./assets/image/joining date 1.png" alt="Employee ID">
+                  <span>Joining Date</span>
                 </div>
-                <div class="info-value">3874744636</div>
+                <div class="info-value">06-06-2022</div>
               </div>
 
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/user 1.png" alt="Full Name">
-                  <span>Full Name</span>
-                </div>
-                <div class="info-value">Mohammad Shafayet Kabir</div>
-              </div>
-
+    
               <div class="info-row">
                 <div class="info-label">
                   <img src="./assets/image/layers 1.png" alt="Designation">
@@ -411,78 +406,35 @@
 
               <div class="info-row">
                 <div class="info-label">
-                  <img src="./assets/image/Staff Category 1 1.png" alt="Staff Category">
-                  <span>Staff Category</span>
+                  <img src="./assets/image/office.png" alt="Staff Category">
+                  <span>Company</span>
                 </div>
-                <div class="info-value">MS</div>
+                <div class="info-value">Pro-edge Associates Limited</div>
               </div>
 
               <div class="info-row">
                 <div class="info-label">
-                  <img src="./assets/image/word 1.png" alt="First Line Manager">
-                  <span>First Line Manager</span>
-                </div>
-                <div class="info-value">Mr. XYZ</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
-            <div class="custom-info-group">
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/copy 1.png" alt="Second Line Manager">
-                  <span>Second Line Manager</span>
-                </div>
-                <div class="info-value">Mr. XYZ</div>
-              </div>
-
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/gender 1.png" alt="Gender">
-                  <span>Gender</span>
-                </div>
-                <div class="info-value">Male</div>
-              </div>
-
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/Date of Birth 1.png" alt="Date of Birth">
-                  <span>Date of Birth</span>
-                </div>
-                <div class="info-value">01-06-1989</div>
-              </div>
-
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/joining date 1.png" alt="Joining Date">
-                  <span>Joining Date</span>
-                </div>
-                <div class="info-value">01-06-2015</div>
-              </div>
-
-              <div class="info-row">
-                <div class="info-label">
-                  <img src="./assets/image/Branch1 1.png" alt="Company Branch">
+                  <img src="./assets/image/Branch1 1.png" alt="First Line Manager">
                   <span>Company Branch</span>
                 </div>
                 <div class="info-value">Dhaka Office</div>
               </div>
 
-              <div class="info-row">
+                     <div class="info-row">
                 <div class="info-label">
-                  <img src="./assets/image/2nd line manager email 1.png" alt="Email">
-                  <span>First Line Manager Email</span>
+                  <img src="./assets/image/user 1.png" alt="First Line Manager">
+                  <span>Employee Type</span>
                 </div>
-                <div class="info-value">Mr.xyz.1234@gmail.com</div>
+                <div class="info-value">Parmanent</div>
               </div>
+
             </div>
           </div>
+
+        
         </div>
       </div>
-              <!--  -->
-
-       <div class="custom-row row-customize" style="margin:30px 0">
+              <div class="custom-row row-customize" style="margin:30px 0">
         <div class="right-side-container">
                   <div class=" height-management" style="height: 680px;">
                     <div class="custom-section-title">Leave Request</div>
@@ -548,40 +500,30 @@
                           <img src="./assets/image/success 1.png" alt="">
                           <span>Remark</span>
                         </div>
-                        <div class="info-value">0.5</div>
+                        <div class="info-value"><input type="text"></div>
                       </div>
 
-                      <!--  -->
-                           <div class="info-row">
+                      <div class="info-row">
                         <div class="info-label">
                               <button class="button">1st Approve Approver</button>
                         </div>
                         <div class="info-value"><button class="button alert-color">1st Approve Reject</button></div>
                       </div>
-                      <!--  -->
-
-                    </div>
+                      </div>
 
                   </div>
-                  <!-- <div class="leave-request-submission">
-                    <div class="section-title">Leave Request For Approval<img src="./assets/image/email_5089889 1.png"
-                        alt=""></div>
-                    <a href=""> <span style="margin-right: 10px;"><i class="fa-solid fa-plus"></i></span> 1st Approver
-                      Approve</a>
-
-                  </div> -->
-                </div>
+                  </div>
 
         <div class="right-side-chart-and-table-container">
           <div class="leave-summary">
             <div class="leave-summary-container remove-gap-for-container">
-              <h2 class="leave-summary-header">Leave Summary of Abdus Subur</h2>
+              <h2 class="leave-summary-header">Leave Summary </h2>
               <table class="leave-summary-table">
                 <thead>
                   <tr>
                     <th>Leave Type</th>
-                    <th>Earned</th>
-                    <th>Used</th>
+                    <th> Entitled</th>
+                    <th>Availed</th>
                     <th>Balance</th>
                   </tr>
                 </thead>
@@ -610,13 +552,13 @@
           </div>
 
           <div class="carousel carousel-gap" id="autoCarousel">
-            <div class="custom-section-title edit-more text-spacing-remove">Leave Summary of Sabur's Diagram</div>
+            <div class="custom-section-title edit-more text-spacing-remove">Leave Summary Diagram</div>
             <div class="carousel-track" id="carouselTrack">
               <div class="leave-box bottom-side-padding">
                 <p><strong>Annual Leave</strong></p>
                 <div class="chart-wrapper popup-chart">
                   <canvas id="chart1"></canvas>
-                  <div class="center-label">15 Days</div>
+                  <div class="center-label">15%</div>
                 </div>
                 <div class="total-chart-value valuless">
                   <p><span class="dark-blue"></span> E. 0 Days</p>
@@ -628,7 +570,7 @@
                 <p><strong>Casual Leave</strong></p>
                 <div class="chart-wrapper popup-chart">
                   <canvas id="chart2"></canvas>
-                  <div class="center-label"> 10 Days</div>
+                  <div class="center-label"> 10%</div>
                 </div>
                 <div class="total-chart-value valuless">
                   <p><span class="dark-blue"></span>U.0 Days</p>
@@ -640,7 +582,7 @@
                 <p><strong>Sick Leave</strong></p>
                 <div class="chart-wrapper popup-chart">
                   <canvas id="chart3"></canvas>
-                  <div class="center-label">14 Days</div>
+                  <div class="center-label">14%</div>
                 </div>
                 <div class="total-chart-value valuless">
                   <p><span class="dark-blue"></span> U.0 Days</p>
@@ -653,9 +595,7 @@
       </div>
    
 
-              <!--  -->
-
-  <div class="leave-request-container gap_ table-responsive">
+              <div class="leave-request-container gap_ table-responsive">
     <div class="leave-request-title">Previous Leave Request</div>
     <div class="leave-request-wrapper">
       <table class="leave-request-table">
@@ -744,24 +684,17 @@
     </div>
   </div>
 
-              <!--  -->
-
-
-    </div>
+              </div>
   </div>
         </div>
       </div>
 
 
 
-<!-- js for boostrap  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- script for chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-   <!--  -->
-  <!-- JavaScript to toggle sidebar visibility -->
-  <script>
+   <script>
     function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     const main = document.getElementById("main");
@@ -823,6 +756,25 @@
             }
           });
         });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if user is logged in
+        if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        }
+
+        // Logout functionality
+        const logoutLinks = document.querySelectorAll('#logout-link-sidebar, #logout-link-dropdown');
+        logoutLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                sessionStorage.removeItem('isLoggedIn');
+                window.location.href = 'login.html';
+            });
+        });
+    });
   </script>
 </body>
 </html>

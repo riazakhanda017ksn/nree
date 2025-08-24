@@ -23,10 +23,10 @@
   <div class="dashboard-layout">
     
     <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
+     <div class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <!-- Company logo -->
-        <img src="./assets/image/logo_White 1.png" alt="">
+        <img src="./assets/image/logo.png" alt="">
         <!-- Close button (for mobile or toggle) -->
         <span class="close-btn" onclick="toggleSidebar()">
           <i class="fa-solid fa-xmark"></i>
@@ -34,21 +34,92 @@
       </div>
 
       <div class="sidebar-link">
-        <!-- Sidebar navigation links -->
-           <a href="index.html" class="gap space">
-           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
+       
+        <div class="sidebar-left-side-auto-content">
+                  <a href="index.html" class="gap space">
+          <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
-        <a href="#" class="gap active">
+        <a href="dashboard.html" class="gap space ">
+          <span><img src="./assets/image/dashboard.svg" alt=""></span> Dashboard
+        </a>
+        <a href="myprofile.html" class="gap space active">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
-      
-        <a href="personal-file.html" class="space">
-          <span><img src="./assets/image/ph_files.svg" alt=""></span> Personal Files
+
+        <a href="payroll.html" class="gap space">
+          <span><img class="payroll-images" src="./assets/image/lets-icons_money-light.svg" alt=""></span> Payroll
         </a>
 
-        <!-- Logout button at bottom -->
-        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd" class="logout gap">
-          <img src="./assets/image/logoout.svg" alt=""> Logout
+        <a href="pms.html" class="gap space " >
+          <span><img  src="./assets/image/mynaui_chart-line.svg" alt=""></span> PMS
+        </a>
+
+         <a href="leavemanagement.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_logout-circle-02.svg" alt=""></span> Leave Management
+        </a>
+
+
+          <a href="requitment.html" class="gap space">
+          <span><img  src="./assets/image/lucide_user-search.svg" alt=""></span> Requitment
+        </a>
+
+         <a href="mobile-bill-managemen.html" class="gap space">
+          <span><img  src="./assets/image/solar_bill-broken.svg" alt=""></span> Mobile Bill
+        </a>
+
+          <a href="attendence.html" class="gap space">
+          <span><img  src="./assets/image/hugeicons_co-present.svg" alt=""></span> Attendance
+        </a>
+
+           <a href="pf-membership.html" class="gap space">
+          <span><img  src="./assets/image/fund.svg" alt=""></span> PF Management
+        </a>
+    
+
+          <a href="probationers-progress.html" class="gap space">
+          <span><img  src="./assets/image/solar_chart-linear.svg" alt=""></span> Probationers Progress
+        </a>
+    
+   <a href="bill-management.html" class="gap space">
+          <span><img  src="./assets/image/bill.svg" alt=""></span> Bill Management
+        </a>
+    
+    
+   <a href="file-cabinet.html" class="gap space">
+          <span><img  src="./assets/image/file.svg" alt=""></span> File Cabinet
+        </a>
+    
+         <a href="meal-management.html" class="gap space">
+          <span><img  src="./assets/image/dx.svg" alt=""></span> Meal Management
+        </a>
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="personal-file.html" class="space">
+          <span><img src="./assets/image/files.svg" alt=""></span> Personal Files
+        </a>
+    </div>
+
+        <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd"  >
+         <img style="width: 130px;" src="./assets/image/logo_White 1.png" alt="">
         </a>
       </div>
     </div>
@@ -97,7 +168,11 @@
 <!--  -->
 
 <div class="dashboard">
-
+   <div class="personalfilesection__breadcrumbs">
+      <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
+      <span class="personalfilesection__breadcrumbs-sep">/</span>
+      <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">My Profile</span>
+    </div>
  <div class="dashboard-grid">
           
           <!-- Welcome Card -->
@@ -134,7 +209,7 @@
                 <div class="profile-small-card">
                   <img src="./assets/image/calendar.svg" alt="">
                   <h4>03</h4>
-                  <p>Pending Tasks</p>
+                  <p>Days Used</p>
                 </div>
               </div>
 
@@ -142,7 +217,7 @@
               <div class="flex-text">
                 <img src="./assets/image/cuida_alert-outline.svg" alt="">
                 <p>
-                  Last Login 2 days ago for this how can I design can you 
+                  It's great to see you again. Your last login was two days ago.
                 </p>
               </div>
             </div>
@@ -230,7 +305,7 @@
 
   <div class="info-row">
     <div class="info-label">
-      <img src="./assets/image/alarm.png" alt="Department">
+      <img src="./assets/image/user 1.png" alt="Department">
       <span>Employee Type</span>
     </div>
     <div class="info-value">Full Time</div>
@@ -296,8 +371,8 @@
 
     <div class="timeline">
       <div class="timeline-step completed">Onboarding Complete</div>
-      <div class="timeline-step completed">30 Days Check in</div>
-      <div class="timeline-step">60 Days Review</div>
+      <div class="timeline-step completed ongoing">30 Days Check in</div>
+      <div class="timeline-step completed completed-green">60 Days Review</div>
       <!-- <div class="timeline-step">Final Evaluation</div> -->
     </div>
 
