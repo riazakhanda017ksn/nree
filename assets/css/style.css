@@ -1742,7 +1742,10 @@ margin: 10px 0;
 
     /* Responsive Design */
     @media (max-width: 700px) {
-
+.profile-content.profile-image {
+    margin-top: 9px !important;
+    margin-bottom: 20px !important;
+}
       .rounded-container {
 
     margin: 0 !important;
@@ -2578,6 +2581,10 @@ grid-row-gap: 0px;
 
     /* Responsive */
     @media (max-width: 992px) {
+      .dashboard-grid {
+   
+    grid-template-columns: repeat(1, 1fr) !important;
+}
       .attendance-correction-form-group {
     flex: 1 1 00px !important;
     margin-right: 20px;
