@@ -401,6 +401,12 @@
             }
           });
         });
+         // New JavaScript function to handle the submenu
+  function toggleSubmenu(event, submenuId) {
+   event.preventDefault(); // Prevents the page from navigating
+   const submenu = document.getElementById(submenuId);
+   submenu.classList.toggle('active-sub-menu');
+  }
   </script>
 </body>
 </html>

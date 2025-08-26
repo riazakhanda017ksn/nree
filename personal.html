@@ -27,7 +27,7 @@
   <div class="dashboard-layout">
     
     <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
+   <div class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <!-- Company logo -->
         <img src="./assets/image/logo.png" alt="">
@@ -36,24 +36,35 @@
           <i class="fa-solid fa-xmark"></i>
         </span>
       </div>
- <div class="sidebar-link">
+
+      <div class="sidebar-link">
        
         <div class="sidebar-left-side-auto-content">
-                  <a href="index.html" class="active">
+                  <a href="index.html" class="gap space">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
-        <a href="dashboard.html" class="gap space ">
+        <a href="dashboard.html" class="gap space active">
           <span><img src="./assets/image/dashboard.svg" alt=""></span> Dashboard
         </a>
         <a href="myprofile.html" class="gap space">
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
 
-        <a href="payroll.html" class="gap space">
+<a href="#" onclick="toggleSubmenu(event, 'payroll-submenu')" class="gap space ">
           <span><img class="payroll-images" src="./assets/image/lets-icons_money-light.svg" alt=""></span> Payroll
-        </a>
+ 
+</a>
 
-        <a href="pms.html" class="gap space">
+<div class="submenu" id="payroll-submenu">
+  <a href="payslip.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/files.svg" alt=""></span>  Pay Slip</a>
+  <a href="salary-card.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/salary-card.svg" alt=""></span>Salary Card</a>
+  <a href="tax-slip.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/tax-slip.svg" alt=""></span>Tax Slip</a>
+  <a href="income-tax-deduction.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/pf-deduction.svg" alt=""></span>Income Tax Deduction</a>
+  <a href="provident-fund-deduction.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/pff.svg" alt=""></span>PF Deduction</a>
+
+</div>
+
+          <a href="pms.html" class="gap space ">
           <span><img  src="./assets/image/mynaui_chart-line.svg" alt=""></span> PMS
         </a>
 
@@ -62,28 +73,36 @@
         </a>
 
 
-          <a href="requitment.html" class="gap space">
+          <a href="requitment.html" class="gap space ">
           <span><img  src="./assets/image/lucide_user-search.svg" alt=""></span> Requitment
         </a>
 
-         <a href="mobile-bill-managemen.html" class="gap space">
+         <a href="mobile-bill-managemen.html" class="gap space ">
           <span><img  src="./assets/image/solar_bill-broken.svg" alt=""></span> Mobile Bill
         </a>
 
-          <a href="attendence.html" class="gap space">
-          <span><img  src="./assets/image/hugeicons_co-present.svg" alt=""></span> Attendance
-        </a>
+      
 
-           <a href="pf-membership.html" class="gap space">
+        <a href="#" onclick="toggleSubmenu(event, 'attendance-submenu')" class="gap space ">
+          <span><img  src="./assets/image/hugeicons_co-present.svg" alt=""></span> Attendance
+ 
+</a>
+
+  <div class="submenu" id="attendance-submenu">
+  <a href="time-card.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/time.svg" alt=""></span>  Time Card</a>
+  <a href="attendance-correction.html" class="gap space"> <span><img  style="height: 21px;" src="./assets/image/Group.svg" alt=""></span>Attendance Correction</a>
+</div>
+
+           <a href="pf-membership.html" class="gap space ">
           <span><img  src="./assets/image/fund.svg" alt=""></span> PF Management
         </a>
     
 
-          <a href="probationers-progress.html" class="gap space">
+          <a href="probationers-progress.html" class="gap space ">
           <span><img  src="./assets/image/solar_chart-linear.svg" alt=""></span> Probationers Progress
         </a>
     
-   <a href="bill-management.html" class="gap space">
+   <a href="bill-management.html" class="gap space ">
           <span><img  src="./assets/image/bill.svg" alt=""></span> Bill Management
         </a>
     
@@ -124,7 +143,7 @@
         <a href="#" style="position: absolute; bottom: 3px; color: #93c5fd"  >
          <img style="width: 130px;" src="./assets/image/logo_White 1.png" alt="">
         </a>
-   </div>
+      </div>
     </div>
 
     <!-- Main Content Area -->
@@ -167,6 +186,9 @@
       </div>
 
       <!-- Dashboard Content -->
+       <div class="page-loader">
+        <div class="loader-ring"></div>
+    </div>
       <div class="dashboard">
        <div class="personalfilesection__breadcrumbs" >
       <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
@@ -327,8 +349,21 @@
   
 //   table js
 
-
+ // New JavaScript function to handle the submenu
+  function toggleSubmenu(event, submenuId) {
+   event.preventDefault(); // Prevents the page from navigating
+   const submenu = document.getElementById(submenuId);
+   submenu.classList.toggle('active-sub-menu');
+  }
    
+     window.addEventListener('load', () => {
+            const loader = document.querySelector('.page-loader');
+            
+            // Set a minimum display time of 3 seconds (3000 milliseconds)
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500); 
+        });
   
   </script>
 

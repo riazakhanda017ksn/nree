@@ -167,6 +167,10 @@
 
 <!--  -->
 
+
+ <div class="page-loader">
+        <div class="loader-ring"></div>
+    </div>
 <div class="dashboard">
     <div class="personalfilesection__breadcrumbs">
       <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
@@ -355,6 +359,22 @@
       dropdown.style.display = "none";
     }
   });
+   // New JavaScript function to handle the submenu
+  function toggleSubmenu(event, submenuId) {
+   event.preventDefault(); // Prevents the page from navigating
+   const submenu = document.getElementById(submenuId);
+   submenu.classList.toggle('active-sub-menu');
+  }
+
+
+  window.addEventListener('load', () => {
+            const loader = document.querySelector('.page-loader');
+            
+            // Set a minimum display time of 3 seconds (3000 milliseconds)
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500); 
+        });
   </script>
 </body>
 </html>

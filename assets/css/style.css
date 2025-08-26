@@ -3328,6 +3328,7 @@ grid-row-gap: 0px;
       background: #ffffff;
       border-radius: 20px;
       box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+      padding-top: 25px;
     }
 
   .work-portal-dashboard-header-logo {
@@ -6754,4 +6755,80 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
             width: 20px;
             height: 20px;
             vertical-align: middle;
+        }
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  
+  /* Add any other default styles like padding or background */
+}
+
+.submenu.active-sub-menu {
+  max-height: 500px;
+background: #ffffff12;
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 19px;
+    border-radius: 13px;
+}
+
+
+
+
+
+
+ /* The long class name for the paragraph, as you requested */
+        .the_big_and_long_class_name_for_this_paragraph_of_text_for_webpage {
+            font-size: 16px; 
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* --- Beautiful Loader Styles --- */
+
+        /* Full-page container for the loader */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* The spinning ring animation */
+        .loader-ring {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #ddd;
+            border-top-color: #007DFF; 
+            border-radius: 50%;
+            animation: ring-spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+
+        /* The animation keyframes */
+        @keyframes ring-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* This class hides the loader after the page loads */
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
         }
