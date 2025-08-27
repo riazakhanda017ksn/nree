@@ -1571,7 +1571,7 @@ small.small {
       .emplyee-info-bg-change > .info-row > .info-value {
     padding-left: 0 !important;
     margin-left: 0 !important; 
-    border: 1px solid #80808052;
+    border: 2px solid #80808052;
     margin-top: 0;
     padding: 9px !important;
 }
@@ -3346,7 +3346,13 @@ grid-row-gap: 0px;
 
 
     @media (max-width: 990px) {
-      
+      .login-form form {
+    width: 100% !important;
+    padding-top: 75px !important;
+}
+      .login-bg {
+    display: none;
+}
           .dashboard-grid.x{
     grid-template-columns: 1fr !important;
    
@@ -6869,12 +6875,12 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
 }
 
 .pagination-container button {
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .pagination-container button:hover {
