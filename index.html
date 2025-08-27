@@ -33,7 +33,7 @@
       <div class="sidebar-link">
        
         <div class="sidebar-left-side-auto-content">
-                  <a href="index.html" class="active">
+                  <a href="index.html" class="active gap space">
           <span><img src="./assets/image/material-symbols-light_home-outline.svg" alt=""></span> Home
         </a>
         <a href="dashboard.html" class="gap space ">
@@ -143,12 +143,13 @@
       
       <div class="navbar">
         <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <div class="center__">
+          <img style="height: 45px;" src="./assets/image/nav.png" alt="">
+        </div>
         <div class="right">
-          <a href="#" style="margin-right: 7px;">
-            <img src="./assets/image/notification-line.svg" alt="">
-          </a>
+          
 
-                   <div class="user-profile-wrapper" onclick="toggleDropdown()">
+  <div class="user-profile-wrapper" onclick="toggleDropdown()">
   <div class="user-profile x">
     <img style="width: 50px;" src="./assets/image/ama.png" alt="">
     <p>Mr. Nafiul Islam <img src="./assets/image/down.svg" alt=""></p>
@@ -290,7 +291,7 @@
 
                  <a href="meal-management.html">
                 <div class="hr-card-item">
-                  <img src="./assets/image/bibimbap.png" alt="">
+                  <img src="./assets/image/teacup_18093859.png" alt="">
                   <h3>Meal Management</h3>
                 </div>
               </a>
@@ -315,63 +316,73 @@
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="position-relative" style="height: 55px;">
-                  <td ><p class="absolute-change">Leave Application for 1st Approval</p></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td> <p class="position-change-for-absolute"><a href="all-employee-leave-status.html" class="d-block bt-for-status">All Employee's Leave Status</a></p> </td>
-                </tr>
-                <tr
-                  data-user='{"id":"EF14545","name":"Md. Imran Ibne Ishaque Rakib","reason":"Fever and doctor advised rest.","duration":"1 day"}'>
-                  <td><span class="color-one">EF14545</span></td>
-                  <td>Md. Imran Rakib</td>
-                  <td> Fever, Doctor’s Rest.</td>
-                  <td><span class="w-auto px-3">1 day</span></td>
-                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
-                </tr>
-                <tr
-                  data-user='{"id":"OF744","name":"Shakil Mahmud","reason":"Severe cold and headache.","duration":"2 days"}'>
-                  <td><span>OF744</span> </td>
-                  <td>Shakil Mahmud</td>
-                  <td>Cold & Headache </td>
-                  <td><span class="w-auto px-3 color-one">2 days </span></td>
-                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
-                </tr>
-                 <tr class="position-relative" style="height: 55px;">
-                  <td ><p class="absolute-change">Leave Application for 2nd Approval</p></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td> </td>
-                </tr>
-                <tr
-                  data-user='{"id":"EF9302","name":"Md. Sazib Mia","reason":"Family emergency travel.","duration":"3 days"}'>
-                  <td> <span class="color-two">EF9302</span></td>
-                  <td>Sazib Mia</td>
-                  <td>Family Emergency.</td>
-                  <td> <span class="w-auto px-3">3 days</span></td>
-                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
-                </tr>
-                
-                <tr
-                  data-user='{"id":"EF14512","name":"Md. Shohel Rana","reason":"Personal medical treatment.","duration":"4 days"}'>
-                  <td><span class="color-three">EF14511 </span></td>
-                  <td>Shohel Rana</td>
-                  <td> Medical Treatment.</td>
-                  <td> <span class="w-auto px-3 color-two">4 days</span></td>
-                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
-                </tr>
-                <tr
-                  data-user='{"id":"EF5440","name":"Md. Anul Haque","reason":"Marriage ceremony attendance.","duration":"5 days"}'>
-                  <td> <span class="color-four">OF744</span></td>
-                  <td>Anul Haque</td>
-                  <td> Marriage Ceremony.</td>
-                  <td><span class="w-auto px-3">5 days </span></td>
-                  <td><i class="bi bi-eye-fill view-icon" data-bs-toggle="modal" data-bs-target="#leaveModal"></i></td>
-                </tr>
-              </tbody>
+            <tbody>
+  <tr class="position-relative" style="height: 55px;">
+    <td>
+      <p class="absolute-change">Leave Application for 1st Approval</p>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <p class="position-change-for-absolute"><a href="all-employee-leave-status.html" class="d-block bt-for-status">All Employee's Leave Status</a></p>
+    </td>
+  </tr>
+  <tr data-user='{"id":"EF14545","name":"Md. Imran Ibne Ishaque Rakib","reason":"Fever and doctor advised rest.","duration":"1 day"}'>
+    <td><span class="color-one">EF14545</span></td>
+    <td>Md. Imran Rakib</td>
+    <td>Fever, Doctor’s Rest.</td>
+    <td><span class="w-auto px-3">1 day</span></td>
+    <td>
+      <button class="view-more" data-bs-toggle="modal" data-bs-target="#leaveModal">View More</button>
+    </td>
+  </tr>
+  <tr data-user='{"id":"OF744","name":"Shakil Mahmud","reason":"Severe cold and headache.","duration":"2 days"}'>
+    <td><span>OF744</span></td>
+    <td>Shakil Mahmud</td>
+    <td>Cold & Headache</td>
+    <td><span class="w-auto px-3 color-one">2 days</span></td>
+    <td>
+      <button class="view-more" data-bs-toggle="modal" data-bs-target="#leaveModal">View More</button>
+    </td>
+  </tr>
+  <tr class="position-relative" style="height: 55px;">
+    <td>
+      <p class="absolute-change">Leave Application for 2nd Approval</p>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr data-user='{"id":"EF9302","name":"Md. Sazib Mia","reason":"Family emergency travel.","duration":"3 days"}'>
+    <td><span class="color-two">EF9302</span></td>
+    <td>Sazib Mia</td>
+    <td>Family Emergency.</td>
+    <td><span class="w-auto px-3">3 days</span></td>
+    <td>
+      <button class="view-more" data-bs-toggle="modal" data-bs-target="#leaveModal">View More</button>
+    </td>
+  </tr>
+  <tr data-user='{"id":"EF14512","name":"Md. Shohel Rana","reason":"Personal medical treatment.","duration":"4 days"}'>
+    <td><span class="color-three">EF14511</span></td>
+    <td>Shohel Rana</td>
+    <td>Medical Treatment.</td>
+    <td><span class="w-auto px-3 color-two">4 days</span></td>
+    <td>
+      <button class="view-more" data-bs-toggle="modal" data-bs-target="#leaveModal">View More</button>
+    </td>
+  </tr>
+  <tr data-user='{"id":"EF5440","name":"Md. Anul Haque","reason":"Marriage ceremony attendance.","duration":"5 days"}'>
+    <td><span class="color-four">OF744</span></td>
+    <td>Anul Haque</td>
+    <td>Marriage Ceremony.</td>
+    <td><span class="w-auto px-3">5 days</span></td>
+    <td>
+      <button class="view-more" data-bs-toggle="modal" data-bs-target="#leaveModal">View More</button>
+    </td>
+  </tr>
+</tbody>
             </table>
           </div>
         </div> 
@@ -818,12 +829,39 @@
         });
     });
 
-     // New JavaScript function to handle the submenu
-  function toggleSubmenu(event, submenuId) {
-   event.preventDefault(); // Prevents the page from navigating
-   const submenu = document.getElementById(submenuId);
-   submenu.classList.toggle('active-sub-menu');
-  }
+  // New JavaScript function to handle the submenu with the new active class name
+            function toggleSubmenu(event, submenuId) {
+                event.preventDefault(); 
+                const submenu = document.getElementById(submenuId);
+                const parentLink = event.currentTarget; 
+                
+                // Get all submenu containers and parent links
+                const allSubmenus = document.querySelectorAll('.submenu');
+                const allParentLinks = document.querySelectorAll('.sidebar-link a');
+            
+                // Remove the active class from all other submenus and their parent links
+                allSubmenus.forEach(menu => {
+                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
+                        menu.classList.remove('active-sub-menu');
+                    }
+                });
+            
+                allParentLinks.forEach(link => {
+                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
+                        link.classList.remove('parent-active');
+                    }
+                });
+            
+                // Toggle the active state for the clicked submenu
+                submenu.classList.toggle('active-sub-menu');
+            
+                // Add/remove the active class for the parent link
+                if (submenu.classList.contains('active-sub-menu')) {
+                    parentLink.classList.add('parent-active');
+                } else {
+                    parentLink.classList.remove('parent-active');
+                }
+            }
 
 
      window.addEventListener('load', () => {

@@ -153,11 +153,13 @@
           <img src="./assets/image/color-logo.png" alt="">
         </div> -->
 
+          <div class="center__">
+          <img style="height: 45px;" src="./assets/image/nav.png" alt="">
+        </div>
+
         <!-- Right side (notifications and user info) -->
         <div class="right">
-          <a href="#" style="margin-right: 7px;">
-            <img src="./assets/image/notification-line.svg" alt="">
-          </a>
+        
          <!-- Click for profile with dropdown -->
 <div class="user-profile-wrapper" onclick="toggleDropdown()">
   <div class="user-profile">
@@ -297,12 +299,39 @@
     }
   });
 
-   // New JavaScript function to handle the submenu
-  function toggleSubmenu(event, submenuId) {
-   event.preventDefault(); // Prevents the page from navigating
-   const submenu = document.getElementById(submenuId);
-   submenu.classList.toggle('active-sub-menu');
-  }
+// New JavaScript function to handle the submenu with the new active class name
+            function toggleSubmenu(event, submenuId) {
+                event.preventDefault(); 
+                const submenu = document.getElementById(submenuId);
+                const parentLink = event.currentTarget; 
+                
+                // Get all submenu containers and parent links
+                const allSubmenus = document.querySelectorAll('.submenu');
+                const allParentLinks = document.querySelectorAll('.sidebar-link a');
+            
+                // Remove the active class from all other submenus and their parent links
+                allSubmenus.forEach(menu => {
+                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
+                        menu.classList.remove('active-sub-menu');
+                    }
+                });
+            
+                allParentLinks.forEach(link => {
+                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
+                        link.classList.remove('parent-active');
+                    }
+                });
+            
+                // Toggle the active state for the clicked submenu
+                submenu.classList.toggle('active-sub-menu');
+            
+                // Add/remove the active class for the parent link
+                if (submenu.classList.contains('active-sub-menu')) {
+                    parentLink.classList.add('parent-active');
+                } else {
+                    parentLink.classList.remove('parent-active');
+                }
+            }
 
  window.addEventListener('load', () => {
             const loader = document.querySelector('.page-loader');

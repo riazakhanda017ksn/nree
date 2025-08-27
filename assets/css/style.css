@@ -53,7 +53,7 @@ body {
 }
 
 .sidebar-header img {
-    width: 65px;
+    width: 108px;
 }
 .sidebar-link a span img {
     height: 25px;
@@ -79,7 +79,7 @@ body {
     margin-top: 0px !important;
 }
 .sidebar-left-side-auto-content {
-    height: 475px;
+    height: 550px;
     overflow: auto;
 }
 
@@ -148,14 +148,26 @@ a.gap {
 }
 
 .space {
-  margin-left: 15px !important;
-  gap: 11px !important;
+  margin-left: 5px !important;
+  gap: 9px !important;
 }
+
+
 
 .active {
   background: #ffffff3a;
-  padding: 7px 14px;
+  padding: 7px 10px;
   border-radius: 30px 0 0 30px;
+}
+
+a.gap.space.parent-active{
+    background: #ffffff3a;
+  padding: 5px 10px;
+  border-radius: 30px 0 0 30px;
+}
+
+a.gap.space.parent-active {
+    margin-bottom: 20px !important;
 }
 
 .logout {
@@ -524,7 +536,10 @@ h2.notification-text {
     background: #ff4e250d !important;
     border: 1px solid #a42e135e !important;
 }
-
+.add-red-color {
+    background: #FFF4F4 !important;
+    border: 1px solid #d58c8c;
+}
 /* ----------------------------------------
   ✦ Responsive Styles (≤ 990px)
 ------------------------------------------- */
@@ -875,7 +890,7 @@ grid-template-columns: repeat(1, 1fr) !important;
     font-weight: 700;
     color: #0f172a;
     border-bottom: 1px solid #cbd5e1;
-   padding-bottom: 20px;
+   padding-bottom: 12px !important;
 }
 
 /* Info rows for employee/leave request */
@@ -938,7 +953,7 @@ grid-template-columns: repeat(1, 1fr) !important;
 .emplyee-info-bg-change > .info-row > .info-value {
     padding-left: 0 !important;
     margin-left: 25px;
-    border: 1.5px solid #80808052;
+    border: 2px solid #80808052;
     margin-top: 0;
     padding: 9px !important;
     align-items: center;
@@ -1039,7 +1054,11 @@ grid-row-gap: 0px;
     color: #0f172a;
     border-bottom: 1px solid #cbd5e1;
     padding-bottom: 18px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
+}
+
+.space-close{
+  margin: 0 !important;
 }
 .carousel-track {
     display: grid;
@@ -1303,7 +1322,7 @@ table.table.align-middle td {
 .right-form-form {
     width: 50%;
     background: white;
-    padding: 26px 30px;
+    padding: 20px 30px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -1350,18 +1369,41 @@ p.position-change-for-absolute {
 
 
 .leave-form-field p {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 .leave-form-field {
-    margin: 16px 0;
+    margin: 10px 0 !important;
 }
 .leave-form-field select, .leave-form-field input {
     width: 100%;
-    padding: 16px;
+    padding: 12px 16px;
     border: 1px solid #cdcdcd;
     border-radius: 6px;
     font-size: 14px;
     margin-top: 6px;
+}
+.leave-form-field.w-full.spacing {
+margin-top: 0 !important;
+}
+
+.total-chart-value.space-none {
+    margin: 0 !important;
+}
+.leave-box.pb-0 {
+    padding-top: 12px;
+}
+
+button.view-more {
+    background: #208AE7;
+    padding: 4px 8px;
+    border: 1px solid #208AE7;
+    color: white;
+    border-radius: 14px;
+    padding-top: 5px;
+    &:hover{
+       background: #1672c1;
+        border: 1px solid #1672c1;
+    }
 }
 .leave-form-field.pt-5 {
     padding-top: 5px;
@@ -1381,7 +1423,7 @@ p.position-change-for-absolute {
     padding: 26px !important;
 }
 .leave-form-field textarea {
-    height: 130px;
+    height: 100px;
     width: 100%;
      border: 1px solid #cdcdcd;
     border-radius: 6px;
@@ -1640,7 +1682,7 @@ button.button {
     }
 
     .leave-summary-table thead th {
-      padding: 15px;
+      padding:10px 15px;
       font-size: 15px;
       font-weight: 500;
       text-align: left;
@@ -1662,7 +1704,7 @@ button.button {
     }
 
   .leave-summary-table tbody td {
-    padding: 11px 15px;
+    padding: 8px 15px;
     font-size: 14px;
     color: #444;
     border-bottom: 1px solid #e4e7f2;
@@ -2035,6 +2077,7 @@ grid-row-gap: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 200px;
 }
 .common-card:hover {
    padding: 14px;
@@ -2044,6 +2087,7 @@ grid-row-gap: 0px;
 .common-card h4 {
     font-size: 17px;
     letter-spacing: 1px;
+    margin-top: 10px;
 }
 
 .common-card img {
@@ -2104,7 +2148,7 @@ grid-row-gap: 0px;
       
     }
 .salary-card {
-    background: transparent;
+    background: #ffffff;
     border-radius: 20px;
     padding: 12px 10px;
     text-align: center;
@@ -2348,15 +2392,15 @@ button.dark-color.top-spacing {
       margin-top: 30px;
     }
 
-    .section-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: #004e92;
-      border-bottom: 2px solid #e0e6ed;
-      padding-bottom: 15px;
-      margin-top: 15px;
-      margin-bottom: 8px;
-    }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #004e92;
+    border-bottom: 2px solid #cecece6d;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
 
     .tax-table {
       width: 100%;
@@ -2454,7 +2498,7 @@ grid-row-gap: 0px;
 }
 
 .login-form form {
-    width: 700px;
+    width: 600px;
     background: linear-gradient(45deg, #f8f8f86b, transparent),url(../image/Ve.png)no-repeat;
     background-size: contain;
     background-position: left;
@@ -2462,10 +2506,25 @@ grid-row-gap: 0px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     padding: 60px;
     border: 1px solid #80808046;
-    margin-left: 85px;
+    margin-left: 145px;
     border-radius: 10px;
+    padding-top: 75px;
+    position: relative;
+}
+.avatar__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: -61px;
 }
 
+
+
+.avatar__img img {
+    height: 120px;
+}
 .input-item p {
     font-size: 11px;
     margin-bottom: 6px;
@@ -6607,148 +6666,99 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
 
 
 
-        .salary_overview_title_text_display {
-            font-size: 28px; /* Large title font size */
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 0;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            line-height: 1.2;
-        }
-
-        /* Section wrapper for the table content */
-     .salary_data_section_content_block_wrapper {
-    margin-bottom: 1.8rem;
-    position: relative;
-    overflow: hidden;
-}
-
-        /* Title for sections within the main content */
-      .salary_section_heading_title_text {
-    font-size: 20px;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 1.2rem;
- 
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-        /* Responsive container for the monthly salary table */
-        .monthly_salary_table_responsive_display_wrapper {
-            overflow-x: auto; /* Enables horizontal scrolling */
-            -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS */
-            border-radius: 0.8rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            margin-top: 1.5rem;
-        }
-
-        /* Main table structure for monthly salary data */
-        .monthly_salary_data_grid_structure {
+     /* Outer container for the table to provide padding, background, and handle horizontal scrolling for mobile devices */
+        .financial-summary-table-container-modern-design {
             width: 100%;
-            min-width: 700px; /* Minimum width to ensure content doesn't shrink too much */
-            border-collapse: separate;
-            border-spacing: 0;
+            overflow-x: auto; /* This is the key property for horizontal scrolling on mobile */
             background-color: #ffffff;
-            /* Table-specific styles can go here if needed */
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px; 
         }
 
-        /* Table header cells */
-.monthly_salary_data_grid_structure th {
-    background-color: #bfe1ff;
-    color: #123A6B;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    font-size: 13px;
-    padding: 1rem 1.2rem;
-    text-align: left;
-    border-bottom: 1px solid #d8e6f3;
-    white-space: nowrap;
-}
-        /* Table data cells */
-        .monthly_salary_data_grid_structure td {
-            padding: 1rem 1.2rem;
-            text-align: left;
-            font-size: 14px;
-            color: #444444;
-            border-bottom: 1px solid #f5f5f5;
-            white-space: nowrap;
+        /* Main table styling */
+        .yearly-financial-data-presentation-table-for-dashboard {
+            width: 100%;
+            border-collapse: separate; 
+            border-spacing: 0;
+            text-align: center;
+            font-size: 0.95em;
+            min-width: 900px; /* Ensures the table is wide enough to trigger scrolling on small screens */
         }
 
-        .monthly_salary_data_grid_structure tbody tr:last-child td {
-            border-bottom: none;
-        }
-
-        .monthly_salary_data_grid_structure tbody tr:hover {
-            background-color: #f9fbff;
-        }
-
-        /* Styling for the month display within the table */
-        .monthly_salary_month_cell_display {
-            display: flex;
-            align-items: center;
+        /* Table header styling */
+        .table-header-section-for-monthly-data-display .table-header-row-for-all-financial-periods {
+            background-color: #e6ffe6; 
+            color: #333;
             font-weight: 600;
-            color: #123A6B; /* Dark blue for month name */
+            border-radius: 8px 8px 0 0; 
+            overflow: hidden; 
         }
 
-        /* Styling for the calendar icon */
-        .monthly_salary_calendar_icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 0.75rem;
-            vertical-align: middle;
+        .table-header-cell-for-month-year-data {
+            padding: 15px 10px;
+            border-bottom: 2px solid #d4ffd4; 
+            position: sticky;
+            top: 0;
+            background-color: #e6ffe6;
+            z-index: 10;
         }
 
-        /* Styling for the amount display within the table */
-        .monthly_salary_amount_cell_display {
-            font-weight: 500;
-            color: #1B70BB; /* Accent blue for amount */
-            font-size: 15px; /* Slightly larger for emphasis */
-            white-space: nowrap;
+        /* Border radius for first and last header cells */
+        .table-header-cell-for-month-year-data:first-child {
+            border-top-left-radius: 8px;
+        }
+        .table-header-cell-for-month-year-data:last-child {
+            border-top-right-radius: 8px;
         }
 
-        /* Styling for the bag/money icon */
-        .monthly_salary_money_icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 0.5rem;
-            vertical-align: middle;
+        /* Table body and data cell styling */
+        .table-body-section-for-detailed-values .table-data-row-for-specific-financial-amounts {
+            background-color: #fff;
+            transition: background-color 0.3s ease;
         }
 
-        /* Specific colors for icon backgrounds (mimicking the image's rounded borders) */
-        .monthly_salary_icon_background {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%; /* Circular background */
-            margin-right: 0.8rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        .table-body-section-for-detailed-values .table-data-row-for-specific-financial-amounts:hover {
+            background-color: #778bff0f; 
         }
 
-        /* Individual icon background colors */
-        .icon_bg_blue { background-color: #e0f2fe; border: 1px solid #90caf9; } /* Light blue */
-        .icon_bg_orange { background-color: #fff3e0; border: 1px solid #ffcc80; } /* Light orange */
-        .icon_bg_green { background-color: #e8f5e9; border: 1px solid #a5d6a7; } /* Light green */
-        .icon_bg_purple { background-color: #f3e5f5; border: 1px solid #ce93d8; } /* Light purple */
-        .icon_bg_red { background-color: #ffebee; border: 1px solid #ef9a9a; } /* Light red */
-        .icon_bg_teal { background-color: #e0f2f2; border: 1px solid #80cbc4; } /* Light teal */
+        .table-data-cell-for-individual-monthly-value {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee; 
+            color: #555;
+        }
 
-        /* Icon colors for the SVGs */
-        .icon_color_blue { color: #2196f3; }
-        .icon_color_orange { color: #ff9800; }
-        .icon_color_green { color: #4caf50; }
-        .icon_color_purple { color: #9c27b0; }
-        .icon_color_red { color: #f44336; }
-        .icon_color_teal { color: #009688; }
+        /* Special styling for the first data cell */
+        .table-data-cell-for-individual-monthly-value:first-child {
+            font-weight: bold;
+            color: #2c3e50; 
+        }
+
+        /* Ensure the bottom border radius for the last row */
+        .table-body-section-for-detailed-values .table-data-row-for-specific-financial-amounts:last-child .table-data-cell-for-individual-monthly-value:first-child {
+            border-bottom-left-radius: 8px;
+        }
+        .table-body-section-for-detailed-values .table-data-row-for-specific-financial-amounts:last-child .table-data-cell-for-individual-monthly-value:last-child {
+            border-bottom-right-radius: 8px;
+        }
+
+        .table-header-cell-for-month-year-data {
+    padding: 15px 10px;
+    border-bottom: 2px solid #d4ffd400;
+    position: sticky;
+    top: 0;
+    background-color: #007dff;
+    z-index: 10;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.add-yellow-bg {
+    background: #FFFAF6;
+    border: 1.5px solid #ffc34f;
+}
+     
 
         /* Icon styling to match the image's calendar/money icons */
         .svg_icon_base_style {
@@ -6764,10 +6774,10 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
   
   /* Add any other default styles like padding or background */
 }
-
 .submenu.active-sub-menu {
-  max-height: 500px;
-background: #ffffff12;
+    margin-left: 20px;
+    max-height: 500px;
+    background: #ffffff12;
     padding: 10px;
     padding-left: 0;
     padding-bottom: 0;
@@ -6775,8 +6785,14 @@ background: #ffffff12;
     border-radius: 13px;
 }
 
+.submenu.active-sub-menu a {
+    margin-bottom: 18px !important;
+}
 
 
+.submenu.active-sub-menu a img {
+    height: 28px !important;
+}
 
 
 
@@ -6832,3 +6848,85 @@ background: #ffffff12;
             visibility: hidden;
             pointer-events: none;
         }
+
+        /* modal css */
+
+.salary-orange-color {
+    background: #F3EAEA;
+    border: 1px solid #a42e135e !important;
+}
+
+
+
+/* pagination css */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination-container button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.pagination-container button:hover {
+  background-color: #e9e9e9;
+  border-color: #999;
+}
+
+.pagination-container button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  cursor: default;
+}
+
+.pagination-container button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-container .page-info {
+  font-weight: 600;
+  color: #555;
+}
+
+/* table even and odd color */
+
+
+/* .even-and-odd-color tr td span:nth-child(odd) {
+      background: #4c8edf4a;
+          color: #4c8edf;
+  padding-top: 6px !important;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 4px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 26px;
+    color: #4c8edf;
+    border: none;
+
+}
+
+.even-and-odd-color tr td span:nth-child(even) {
+      background: #f77f0029 !important;
+    color: #F77F00 !important;
+      padding-top: 6px !important;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 4px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 26px;
+    color: #4c8edf;
+    border: none;
+} */

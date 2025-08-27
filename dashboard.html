@@ -158,11 +158,13 @@
           <img src="./assets/image/color-logo.png" alt="">
         </div> -->
 
+          <div class="center__">
+          <img style="height: 45px;" src="./assets/image/nav.png" alt="">
+        </div>
+
         <!-- Right side (notifications and user info) -->
         <div class="right">
-          <a href="#" style="margin-right: 7px;">
-            <img src="./assets/image/notification-line.svg" alt="">
-          </a>
+        
 
                    <!-- Click for profile with dropdown -->
 <div class="user-profile-wrapper" onclick="toggleDropdown()">
@@ -218,6 +220,10 @@
       <tbody id="employeeTableBody"></tbody>
     </table>
     </div>
+    <!--  -->
+<div class="pagination-container" id="pagination-container"></div>
+
+    <!--  -->
   </div>
         
       </div>
@@ -239,15 +245,13 @@
    <!--  -->
   <!-- JavaScript to toggle sidebar visibility -->
   <script>
-    function toggleSidebar() {
+  function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     const main = document.getElementById("main");
 
     if (window.innerWidth <= 768) {
-      // Mobile: slide in/out
       sidebar.classList.toggle("active");
     } else {
-      // Desktop: hide/show
       sidebar.classList.toggle("hidden");
       if (sidebar.classList.contains("hidden")) {
         main.style.width = "100%";
@@ -257,12 +261,11 @@
     }
   }
 
-        function toggleDropdown() {
+  function toggleDropdown() {
     const dropdown = document.getElementById("profileDropdown");
     dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
   }
 
-  // Click outside to close
   document.addEventListener("click", function (e) {
     const profile = document.querySelector(".user-profile-wrapper");
     const dropdown = document.getElementById("profileDropdown");
@@ -271,67 +274,152 @@
       dropdown.style.display = "none";
     }
   });
-  
-//   table js
 
+  function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    const submenu = document.getElementById(submenuId);
+    const parentLink = event.currentTarget;
 
-    const employees = [
-      { id: "10305", name: "Mr.Alex", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2022-04-01" },
-      { id: "10502", name: "Md Hasanur Zaman", branch: "Dhaka Office", dept: "Field Operations", date: "2022-09-18" },
-      { id: "10504", name: "Tawsif Rahman", branch: "Dhaka Office", dept: "Field Operations", date: "2023-03-01" },
-      { id: "10513", name: "Md. Safowan Hossain", branch: "Dhaka Office", dept: "Field Operations", date: "2024-04-30" },
-      { id: "10516", name: "Tania Sultana", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2024-12-02" },
-      { id: "10517", name: "Md. Jihad Hossain", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2025-05-12" }
-    ];
+    const allSubmenus = document.querySelectorAll('.submenu');
+    const allParentLinks = document.querySelectorAll('.sidebar-link a');
 
-    const tbody = document.getElementById("employeeTableBody");
-    const inputs = document.querySelectorAll(".employee-search-input");
+    allSubmenus.forEach(menu => {
+      if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
+        menu.classList.remove('active-sub-menu');
+      }
+    });
 
-    function renderTable(data) {
-      tbody.innerHTML = "";
-      data.forEach(emp => {
-        tbody.innerHTML += `
-          <tr>
-            <td><span class="employee-id-badge">${emp.id}</span></td>
-            <td>${emp.name}</td>
-            <td>${emp.branch}</td>
-            <td>${emp.dept}</td>
-            <td>${emp.date}</td>
-            <td><a href="profile-dashboard.html" class="employee-dashboard-link">Dashboard</a></td>
-          </tr>
-        `;
+    allParentLinks.forEach(link => {
+      if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
+        link.classList.remove('parent-active');
+      }
+    });
+
+    submenu.classList.toggle('active-sub-menu');
+
+    if (submenu.classList.contains('active-sub-menu')) {
+      parentLink.classList.add('parent-active');
+    } else {
+      parentLink.classList.remove('parent-active');
+    }
+  }
+
+  // Table and Pagination Logic
+  const employees = [
+    { id: "10305", name: "Mr.Alex", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2022-04-01" },
+    { id: "10502", name: "Md Hasanur Zaman", branch: "Dhaka Office", dept: "Field Operations", date: "2022-09-18" },
+    { id: "10504", name: "Tawsif Rahman", branch: "Dhaka Office", dept: "Field Operations", date: "2023-03-01" },
+    { id: "10513", name: "Md. Safowan Hossain", branch: "Dhaka Office", dept: "Field Operations", date: "2024-04-30" },
+    { id: "10516", name: "Tania Sultana", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2024-12-02" },
+    { id: "10517", name: "Md. Jihad Hossain", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2025-05-12" },
+    { id: "10518", name: "Md. Karim Ahmed", branch: "Chittagong Office", dept: "Field Operations", date: "2025-06-15" },
+    { id: "10519", name: "Faria Islam", branch: "Dhaka Office", dept: "Customer Service Centre", date: "2025-07-20" },
+    { id: "10520", name: "Mahmudul Haque", branch: "Sylhet Office", dept: "Field Operations", date: "2025-08-05" },
+    { id: "10521", name: "Sanjida Begum", branch: "Dhaka Office", dept: "HR Department", date: "2025-09-10" },
+    { id: "10522", name: "Rashed Khan", branch: "Khulna Office", dept: "Customer Service Centre", date: "2025-10-01" },
+    { id: "10523", name: "Jannatul Ferdous", branch: "Dhaka Office", dept: "Accounts", date: "2025-11-14" },
+    { id: "10524", name: "Alif Hossen", branch: "Barishal Office", dept: "Field Operations", date: "2025-12-01" },
+  ];
+
+  const tbody = document.getElementById("employeeTableBody");
+  const inputs = document.querySelectorAll(".employee-search-input");
+  const paginationContainer = document.getElementById("pagination-container");
+
+  const itemsPerPage = 5;
+  let currentPage = 1;
+  let filteredEmployees = employees;
+
+  function renderTable(data, page) {
+    tbody.innerHTML = "";
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const paginatedItems = data.slice(start, end);
+
+    paginatedItems.forEach(emp => {
+      tbody.innerHTML += `
+        <tr>
+          <td><span class="employee-id-badge">${emp.id}</span></td>
+          <td>${emp.name}</td>
+          <td>${emp.branch}</td>
+          <td>${emp.dept}</td>
+          <td>${emp.date}</td>
+          <td><a href="profile-dashboard.html" class="employee-dashboard-link">Dashboard</a></td>
+        </tr>
+      `;
+    });
+  }
+
+  function setupPagination(data, container) {
+    container.innerHTML = "";
+    const pageCount = Math.ceil(data.length / itemsPerPage);
+
+    const prevButton = document.createElement("button");
+    prevButton.innerText = "Previous";
+    prevButton.classList.add("prev-btn");
+    prevButton.disabled = currentPage === 1;
+    prevButton.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderTable(data, currentPage);
+        setupPagination(data, container);
+      }
+    });
+    container.appendChild(prevButton);
+
+    for (let i = 1; i <= pageCount; i++) {
+      const btn = document.createElement("button");
+      btn.innerText = i;
+      if (i === currentPage) {
+        btn.classList.add("active");
+      }
+      btn.addEventListener("click", () => {
+        currentPage = i;
+        renderTable(data, currentPage);
+        setupPagination(data, container);
       });
+      container.appendChild(btn);
     }
 
-    function filterTable() {
-      const idVal = document.getElementById("searchId").value.toLowerCase();
-      const nameVal = document.getElementById("searchName").value.toLowerCase();
-      const branchVal = document.getElementById("searchBranch").value.toLowerCase();
-      const deptVal = document.getElementById("searchDept").value.toLowerCase();
-      const dateVal = document.getElementById("searchDate").value.toLowerCase();
+    const nextButton = document.createElement("button");
+    nextButton.innerText = "Next";
+    nextButton.classList.add("next-btn");
+    nextButton.disabled = currentPage === pageCount;
+    nextButton.addEventListener("click", () => {
+      if (currentPage < pageCount) {
+        currentPage++;
+        renderTable(data, currentPage);
+        setupPagination(data, container);
+      }
+    });
+    container.appendChild(nextButton);
+  }
 
-      const filtered = employees.filter(emp => 
-        emp.id.toLowerCase().includes(idVal) &&
-        emp.name.toLowerCase().includes(nameVal) &&
-        emp.branch.toLowerCase().includes(branchVal) &&
-        emp.dept.toLowerCase().includes(deptVal) &&
-        emp.date.toLowerCase().includes(dateVal)
-      );
-      renderTable(filtered);
-    }
+  function filterTable() {
+    const idVal = document.getElementById("searchId").value.toLowerCase();
+    const nameVal = document.getElementById("searchName").value.toLowerCase();
+    const branchVal = document.getElementById("searchBranch").value.toLowerCase();
+    const deptVal = document.getElementById("searchDept").value.toLowerCase();
+    const dateVal = document.getElementById("searchDate").value.toLowerCase();
 
-    inputs.forEach(input => input.addEventListener("input", filterTable));
+    filteredEmployees = employees.filter(emp =>
+      emp.id.toLowerCase().includes(idVal) &&
+      emp.name.toLowerCase().includes(nameVal) &&
+      emp.branch.toLowerCase().includes(branchVal) &&
+      emp.dept.toLowerCase().includes(deptVal) &&
+      emp.date.toLowerCase().includes(dateVal)
+    );
 
-    // Initial render
-    renderTable(employees);
-    
-   // New JavaScript function to handle the submenu
-  function toggleSubmenu(event, submenuId) {
-   event.preventDefault(); // Prevents the page from navigating
-   const submenu = document.getElementById(submenuId);
-   submenu.classList.toggle('active-sub-menu');
-  }
-  </script>
+    currentPage = 1; // Reset to the first page on new search
+    renderTable(filteredEmployees, currentPage);
+    setupPagination(filteredEmployees, paginationContainer);
+  }
+
+  inputs.forEach(input => input.addEventListener("input", filterTable));
+
+  // Initial render of the table and pagination
+  renderTable(filteredEmployees, currentPage);
+  setupPagination(filteredEmployees, paginationContainer);
+</script>
 
 
 

@@ -27,17 +27,7 @@
   <div class="dashboard-layout">
     
     <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <!-- Company logo -->
-        <img src="./assets/image/logo.png" alt="">
-        <!-- Close button (for mobile or toggle) -->
-        <span class="close-btn" onclick="toggleSidebar()">
-          <i class="fa-solid fa-xmark"></i>
-        </span>
-      </div>
-
-      <div class="sidebar" id="sidebar">
+  <div class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <!-- Company logo -->
         <img src="./assets/image/logo.png" alt="">
@@ -155,7 +145,6 @@
         </a>
       </div>
     </div>
-    </div>
 
     <!-- Main Content Area -->
     <div class="main" id="main">
@@ -168,12 +157,13 @@
         <!-- <div class="logo">
           <img src="./assets/image/color-logo.png" alt="">
         </div> -->
+          <div class="center__">
+          <img style="height: 45px;" src="./assets/image/nav.png" alt="">
+        </div>
 
         <!-- Right side (notifications and user info) -->
         <div class="right">
-          <a href="#" style="margin-right: 7px;">
-            <img src="./assets/image/notification-line.svg" alt="">
-          </a>
+        
 
                    <!-- Click for profile with dropdown -->
 <div class="user-profile-wrapper" onclick="toggleDropdown()">
@@ -197,7 +187,8 @@
       </div>
 
       <!-- Dashboard Content -->
-      <div class="dashboard">
+      <div class="dashboard" style="position: relative;">
+
         <div class="personalfilesection__breadcrumbs" style="justify-content: center;">
       <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
       <span class="personalfilesection__breadcrumbs-sep">/</span>
@@ -227,13 +218,581 @@
 
     <!-- Footer Tiles -->
     <div class="employee-dashboard-footer-grid-section">
-      <a href="personal.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">👤</span>Personal</a>
-      <a href="employment-information.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">💼</span>Employment</a>
-      <a href="organogram.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🗂️</span>Organogram</a>
-      <a href="leave.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🏖️</span>Leave</a>
-      <a href="dashboard-attendence.html" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">📅</span>Attendance</a>
+      <a data-bs-toggle="modal" data-bs-target="#leaveModal" href="#"  class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">👤</span>Personal</a>
+      <a data-bs-toggle="modal" data-bs-target="#leaveModal1" href="#" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">💼</span>Employment</a>
+      <a data-bs-toggle="modal" data-bs-target="#leaveModal2" href="#"  class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🗂️</span>Organogram</a>
+      <a data-bs-toggle="modal" data-bs-target="#leaveModal3" href="#" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">🏖️</span>Leave</a>
+      <a data-bs-toggle="modal" data-bs-target="#leaveModal4" href="#" class="employee-dashboard-footer-single-tile"><span class="employee-dashboard-tile-emoji-icon">📅</span>Attendance</a>
     </div>
   </div>
+
+
+
+
+
+
+<!-- modal text -->
+
+ <div class="modal fade" id="leaveModal" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="leaveModalLabel">Personal Information</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+           
+ <div class="futuristic-employee-card-container-wrapper">
+    <div class="futuristic-employee-card-core-box">
+
+      <div class="futuristic-employee-card-section-heading">👤 Personal Information</div>
+      <div class="futuristic-employee-info-multigrid-layout">
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🆔 Employee ID</div>
+          <div class="futuristic-employee-info-item-value-text">10305</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🧑 Name</div>
+          <div class="futuristic-employee-info-item-value-text">Mr.Alex</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">👨‍💼 Father Name</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">👩 Mother Name</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🚻 Gender</div>
+          <div class="futuristic-employee-info-item-value-text">Male</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🎂 Birthday</div>
+          <div class="futuristic-employee-info-item-value-text">1998-12-06</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">💼 TIN</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🆔 National ID</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🛂 Passport No</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🛏 Weekly Holiday</div>
+          <div class="futuristic-employee-info-item-value-text">Friday</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">💍 Marital Status</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🩸 Blood Group</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">📍 Present Address</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🏡 Permanent Address</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">👪 Family Info</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+        <div class="futuristic-employee-info-item-container">
+          <div class="futuristic-employee-info-item-label-text">🚨 Emergency Info</div>
+          <div class="futuristic-employee-info-item-value-text">—</div>
+        </div>
+      </div>
+
+      <div class="futuristic-employee-card-section-heading">🎓 Education</div>
+      <div class="futuristic-employee-multiline-paragraph-block">
+        <p>📘 <span>SSC:</span> Business Studies, Willes Little Flower School & College Dhaka, GPA: 4.06/5.00, Dhaka Board, 2014</p>
+        <p>📘 <span>HSC:</span> Business Studies, Dhaka Imperial College, GPA: 3.17/5.00, Dhaka Board, 2016</p>
+        <p>🎓 <span>BBA:</span> School of Management, AP Goyal Shimla University, GPA: 7.00/10.00, Himachal Pradesh, 2019</p>
+      </div>
+
+      <div class="futuristic-employee-card-section-heading">📜 Professional Qualification</div>
+      <div class="futuristic-employee-multiline-paragraph-block"><p>—</p></div>
+
+      <div class="futuristic-employee-card-section-heading">💼 Skill Info</div>
+      <div class="futuristic-employee-multiline-paragraph-block"><p>—</p></div>
+
+      <div class="futuristic-employee-card-section-heading">🧾 Employment History</div>
+      <div class="futuristic-employee-multiline-paragraph-block">
+        <p>1️⃣ 01 Apr 2021 – Present: Customer Service Officer, Pro-edge Associates Ltd.</p>
+        <p>2️⃣ 01 Apr 2021 – 31 Mar 2022: Operation Manager, Uddom Express Ltd.</p>
+        <p>3️⃣ 01 Dec 2018 – 31 Dec 2018: Team Member, Chopstick Restaurant</p>
+        <p>4️⃣ 01 Aug 2018 – 30 Nov 2018: Senior Team Member, Aqua Java Decibel</p>
+        <p>5️⃣ 01 Apr 2017 – 30 Jun 2018: Shift Manager, Domino’s Pizza India</p>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+        </div>
+ </div>
+
+<!--  -->
+
+<div class="modal fade" id="leaveModal1" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="leaveModalLabel">
+Employment Information</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+           
+ <div class="personalfilesection__breadcrumbs" style="justify-content: center;">
+      <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
+      <span class="personalfilesection__breadcrumbs-sep">/</span>
+            <span class="personalfilesection__breadcrumbs-item"><a href="dashboard.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Dashboard</a></span>
+      <span class="personalfilesection__breadcrumbs-sep">/</span>
+                  <span class="personalfilesection__breadcrumbs-item"><a href="profile-dashboard.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Profile Dashboard</a></span>
+      <span class="personalfilesection__breadcrumbs-sep">/</span>
+      <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">Employment Information</span>
+    </div>
+
+      <div class="custom-container background-change">
+        <div class="custom-section-title spacing-hide" style="border: none;">Employment Information</div>
+        <div class="custom-row">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none; width: 100% !important;">
+            <div class="custom-info-group emplyee-info-bg-change span-five-hundred">
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/joining date 1.png" alt="Employee ID">
+                  <span>Joining Date</span>
+                </div>
+                <div class="info-value">06-06-2022</div>
+              </div>
+
+    
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/layers 1.png" alt="Designation">
+                  <span>Designation</span>
+                </div>
+                <div class="info-value">Customer Service Officer</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/department 1.png" alt="Department">
+                  <span>Department</span>
+                </div>
+                <div class="info-value">Customer Service Center</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/office.png" alt="Staff Category">
+                  <span>Company</span>
+                </div>
+                <div class="info-value">Pro-edge Associates Limited</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/Branch1 1.png" alt="First Line Manager">
+                  <span>Company Branch</span>
+                </div>
+                <div class="info-value">Dhaka Office</div>
+              </div>
+
+                     <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/user 1.png" alt="First Line Manager">
+                  <span>Employee Type</span>
+                </div>
+                <div class="info-value">Parmanent</div>
+              </div>
+
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+        </div>
+ </div>
+<!--  -->
+
+
+<div class="modal fade" id="leaveModal2" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="leaveModalLabel">
+Organogram Structure</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+  
+            <div class="modern-organogram-container-section">
+    <div class="modern-organogram-layout-wrapper">
+
+      <div class="modern-organogram-header-title-block">
+        🧬 <span>Organogram Structure of <strong>Mr.Alex (10305)</strong></span>
+      </div>
+
+      <div class="modern-organogram-avatar-box">
+        <img src="./assets/image/profile2.png" alt="Employee Avatar">
+        <h3>Mr.Alex<br><small>Customer Service Officer</small></h3>
+      </div>
+
+      <div class="modern-organogram-connection-line"></div>
+
+      <div class="modern-organogram-hierarchy-visual">
+        <div class="modern-organogram-role-card">
+          <h4>📍 Department</h4>
+          <p><strong>Client Relations</strong></p>
+        </div>
+
+        <div class="modern-organogram-role-card">
+          <h4>👨‍💼 Report To</h4>
+          <p><strong>Md. Arifur Rahman</strong></p>
+          <p>Operations Manager</p>
+        </div>
+
+        <div class="modern-organogram-role-card">
+          <h4>🧑‍🤝‍🧑 Reportee</h4>
+          <p>Farzana Akter <strong>(Jr. Executive)</strong></p>
+          <p>Touhid Hossain <strong>(Support)</strong></p>
+          <p>Mahin Hasan <strong>(Intern)</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+        </div>
+ </div>
+<!--  -->
+
+<div class="modal fade" id="leaveModal3" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="leaveModalLabel">
+Leave Status</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      <div class="modal-body">
+<div class="full-width-page-wrapper-container">
+    <div class="leave-summary-main-header-box">
+      <h2>Leave Information</h2>
+    </div>
+
+    <div class="employee-information-flex-section">
+      <div class="individual-employee-information-box"><strong>🆔 Employee ID:</strong> 10305</div>
+      <div class="individual-employee-information-box"><strong>👤 Name:</strong> Nafix</div>
+      <div class="individual-employee-information-box"><strong>📆 Leave Year:</strong> 2025-2026</div>
+    </div>
+
+    <div class="table-title-heading-section-text ">Leave Summary of 2025-2026</div>
+     <div class="table-responsive">
+        <table class="modern-clean-data-table-style table-responsive-lg">
+      <thead>
+        <tr>
+          <th>Leave Type</th>
+          <th>Entitled</th>
+          <th>Availed</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="leave-type-label-with-background">Annual Leave</span></td>
+          <td>18 Days</td>
+          <td><span class="used-leave-days-highlight-tag">0 Days</span></td>
+          <td>18 Days</td>
+        </tr>
+        <tr>
+          <td><span class="leave-type-label-with-background">Casual Leave</span></td>
+          <td>10 Days</td>
+          <td><span class="used-leave-days-highlight-tag">0 Days</span></td>
+          <td>10 Days</td>
+        </tr>
+        <tr>
+          <td><span class="leave-type-label-with-background">Sick Leave</span></td>
+          <td>14 Days</td>
+          <td><span class="used-leave-days-highlight-tag">0 Days</span></td>
+          <td>14 Days</td>
+        </tr>
+        <tr>
+          <td><span class="leave-type-label-with-background">Compensatory</span></td>
+          <td>0 Days</td>
+          <td><span class="used-leave-days-highlight-tag">0 Days</span></td>
+          <td>0 Days</td>
+        </tr>
+        <tr>
+          <td><span class="leave-type-label-with-background">BL</span></td>
+          <td>1 Day</td>
+          <td><span class="used-leave-days-highlight-tag">0 Days</span></td>
+          <td>1 Day</td>
+        </tr>
+      </tbody>
+    </table>
+     </div>
+
+    <div class="pending-request-warning-message-box">Pending Leave Request</div>
+    <div class="table-responsive">
+    <table class="modern-clean-data-table-style">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Leave Type</th>
+          <th>Reason</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Days</th>
+          <th>Year</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><span class="leave-type-label-with-background">Casual Leave</span></td>
+          <td>Visit the Doctor For My Baby Urgent Basis</td>
+          <td>29-07-2025</td>
+          <td>29-07-2025</td>
+          <td>1</td>
+          <td>2025-2026</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table></div>
+  </div>
+      </div>
+  </div>
+        </div>
+ </div>
+<!--  -->
+
+
+<div class="modal fade" id="leaveModal4" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="leaveModalLabel">
+Dashboard Attendance</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      <div class="modal-body">
+   <div class="right-form-form w-full" style="margin-top: 30px !important; background: white !important; margin-bottom: 30px;margin-top: 0 !important;">
+          <div class="custom-section-title" style="padding-bottom: 20px;">Employee Salary Selector</div>
+          <form action="" >
+            <div class="one-input-flex" >
+
+
+            <div class="leave-form-field w-100 ">
+              <p>Select Year</p>
+             <select id="year" name="year">
+          <option value="">Select Year</option>
+          <option value="2024-2025">2024-2025</option>
+         <option value="2025-2026">2025-2026</option>
+         <option value="2026-2027">2026-2027</option>
+         <option value="2027-2028">2027-2028</option>
+         <option value="2027-2028">2028-2029</option>
+         <option value="2029-2030">2029-2030</option>
+
+           </select>  </div>
+           
+            <div class="button-flex">
+              <button class="dark-color top-spacing btn-inside-padding" >Submit</button>
+            </div>
+            </div>
+
+      
+        
+
+          </form>
+</div>
+ <div class="custom-container background-change" style="margin: 0;">
+        <div class="custom-section-title spacing-hide" style="border: none;">Employee Information</div>
+        <div class="custom-row">
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group emplyee-info-bg-change">
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/employee id 1 1.png" alt="Employee ID">
+                  <span>Employee ID</span>
+                </div>
+                <div class="info-value">3874744636</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/user 1.png" alt="Full Name">
+                  <span>Full Name</span>
+                </div>
+                <div class="info-value">Mohammad Shafayet Kabir</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/layers 1.png" alt="Designation">
+                  <span>Designation</span>
+                </div>
+                <div class="info-value">Customer Service Officer</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/department 1.png" alt="Department">
+                  <span>Department</span>
+                </div>
+                <div class="info-value">Customer Service Center</div>
+              </div>
+
+          
+            </div>
+          </div>
+
+          <div class="half-section remove-space-zero border-section" style="box-shadow: none;">
+            <div class="custom-info-group emplyee-info-bg-change">
+           
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/gender 1.png" alt="Gender">
+                  <span>Gender</span>
+                </div>
+                <div class="info-value">Male</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/Date of Birth 1.png" alt="Date of Birth">
+                  <span>Date of Birth</span>
+                </div>
+                <div class="info-value">01-06-1989</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/joining date 1.png" alt="Joining Date">
+                  <span>Joining Date</span>
+                </div>
+                <div class="info-value">01-06-2015</div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-label">
+                  <img src="./assets/image/Branch1 1.png" alt="Company Branch">
+                  <span>Company Branch</span>
+                </div>
+                <div class="info-value">Dhaka Office</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <!-- dashboard attendence -->
+    <div class="attendance-records-container-wrapper">
+  <table class="attendance-records-beautiful-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Shift In Time</th>
+        <th>In Time</th>
+        <th>Shift Out Time</th>
+        <th>Out Time</th>
+        <th>Status</th>
+        <th>Remarks</th>
+        <th>OT Hours</th>
+        <th>Application Status</th>
+        <th>GEO Location</th>
+        <th>Location Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">2025-08-01</td>
+        <td data-label="Shift In Time">09:00</td>
+        <td data-label="In Time"></td>
+        <td data-label="Shift Out Time">17:00</td>
+        <td data-label="Out Time"></td>
+        <td data-label="Status"><span class="attendance-status-badge">Weekly Holiday</span></td>
+        <td data-label="Remarks"></td>
+        <td data-label="OT Hours"></td>
+        <td data-label="Application Status"></td>
+        <td data-label="GEO Location"></td>
+        <td data-label="Location Remarks"></td>
+      </tr>
+      <tr>
+        <td data-label="Date">2025-08-02</td>
+        <td data-label="Shift In Time">09:00</td>
+        <td data-label="In Time"></td>
+        <td data-label="Shift Out Time">17:00</td>
+        <td data-label="Out Time"></td>
+        <td data-label="Status"><span class="attendance-status-badge">Absent</span></td>
+        <td data-label="Remarks"></td>
+        <td data-label="OT Hours"></td>
+        <td data-label="Application Status"></td>
+        <td data-label="GEO Location"></td>
+        <td data-label="Location Remarks"></td>
+      </tr>
+      <tr>
+        <td data-label="Date">2025-08-03</td>
+        <td data-label="Shift In Time">09:00</td>
+        <td data-label="In Time">08:40</td>
+        <td data-label="Shift Out Time">17:00</td>
+        <td data-label="Out Time">08:47</td>
+        <td data-label="Status"><span class="attendance-status-badge">Present</span></td>
+        <td data-label="Remarks">Early Out</td>
+        <td data-label="OT Hours">0</td>
+        <td data-label="Application Status"></td>
+        <td data-label="GEO Location"><span class="geo-location-small-badge">At Office</span></td>
+        <td data-label="Location Remarks"></td>
+      </tr>
+        <tr>
+    <td data-label="Date">2025-08-01</td>
+    <td data-label="Shift In Time">09:00</td>
+    <td data-label="In Time">08:40</td>
+    <td data-label="Shift Out Time">17:00</td>
+    <td data-label="Out Time">08:47</td>
+    <td data-label="Status"><span class="attendance-status-badge">Present</span></td>
+    <td data-label="Remarks">Early Out</td>
+    <td data-label="OT Hours">0</td>
+    <td data-label="Application Status">Approved</td>
+    <td data-label="GEO Location"><span class="geo-location-small-badge">At Office</span></td>
+    <td data-label="Location Remarks">Main Branch</td>
+  </tr>
+    </tbody>
+  </table>
+</div>
+  <!--  -->
+      </div>
+  </div>
+        </div>
+ </div>
+<!--  -->
+
+
+
+
         
       </div>
 
@@ -247,6 +806,8 @@
 
 
 <!-- script for chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
    <!--  -->
@@ -286,12 +847,54 @@
   });
   
 //   table js
-   // New JavaScript function to handle the submenu
-  function toggleSubmenu(event, submenuId) {
-   event.preventDefault(); // Prevents the page from navigating
-   const submenu = document.getElementById(submenuId);
-   submenu.classList.toggle('active-sub-menu');
-  }
+// New JavaScript function to handle the submenu with the new active class name
+            function toggleSubmenu(event, submenuId) {
+                event.preventDefault(); 
+                const submenu = document.getElementById(submenuId);
+                const parentLink = event.currentTarget; 
+                
+                // Get all submenu containers and parent links
+                const allSubmenus = document.querySelectorAll('.submenu');
+                const allParentLinks = document.querySelectorAll('.sidebar-link a');
+            
+                // Remove the active class from all other submenus and their parent links
+                allSubmenus.forEach(menu => {
+                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
+                        menu.classList.remove('active-sub-menu');
+                    }
+                });
+            
+                allParentLinks.forEach(link => {
+                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
+                        link.classList.remove('parent-active');
+                    }
+                });
+            
+                // Toggle the active state for the clicked submenu
+                submenu.classList.toggle('active-sub-menu');
+            
+                // Add/remove the active class for the parent link
+                if (submenu.classList.contains('active-sub-menu')) {
+                    parentLink.classList.add('parent-active');
+                } else {
+                    parentLink.classList.remove('parent-active');
+                }
+            }
+
+            // modal js
+   function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'flex';
+  }
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
   </script>
 
 
