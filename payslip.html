@@ -172,13 +172,21 @@
  <div class="page-loader">
         <div class="loader-ring"></div>
     </div>
-<div class="dashboard">
+<div class="dashboard"  id="captureArea">
     <div class="personalfilesection__breadcrumbs">
-      <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
+     <div class="breadcumbs-item">
+       <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
       <span class="personalfilesection__breadcrumbs-sep">/</span>
       <span class="personalfilesection__breadcrumbs-item"><a href="payroll.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; ">Payroll</a></span>
       <span class="personalfilesection__breadcrumbs-sep">/</span>
       <span class="personalfilesection__breadcrumbs-item personalfilesection__breadcrumbs-item--active">Payslip</span>
+     </div>
+     
+     <button id="screenshotBtn">
+        <img src="./assets/image/121212.svg" alt="">
+        Printable Version
+     </button>
+
     </div>
   <div class="custom-container background-change add-color-blue" style="margin: 0;">
         <div class="custom-section-title spacing-hide" style="border: none;">Payslip for the month of July 2025</div>
@@ -325,9 +333,28 @@
 
    
 
-<!-- JavaScript to toggle sidebar visibility -->
+ <!-- printable js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  
+<!--  -->
   <script>
 
+    // printable row js
+       document.getElementById("screenshotBtn").addEventListener("click", function() {
+      let captureArea = document.getElementById("captureArea");
+
+      html2canvas(captureArea).then(canvas => {
+        let imgData = canvas.toDataURL("image/png");
+
+        let printWindow = window.open("", "_blank ");
+        printWindow.document.write("<img src='" + imgData + "' style='width:100%'>");
+        printWindow.document.close();
+        printWindow.focus();
+        printWindow.print();
+      });
+    });
+    // 
+  /////JavaScript to toggle sidebar visibility
   function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     const main = document.getElementById("main");
