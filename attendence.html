@@ -250,38 +250,37 @@
     }
   });
 // New JavaScript function to handle the submenu with the new active class name
-            function toggleSubmenu(event, submenuId) {
-                event.preventDefault(); 
-                const submenu = document.getElementById(submenuId);
-                const parentLink = event.currentTarget; 
-                
-                // Get all submenu containers and parent links
-                const allSubmenus = document.querySelectorAll('.submenu');
-                const allParentLinks = document.querySelectorAll('.sidebar-link a');
-            
-                // Remove the active class from all other submenus and their parent links
-                allSubmenus.forEach(menu => {
-                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
-                        menu.classList.remove('active-sub-menu');
-                    }
-                });
-            
-                allParentLinks.forEach(link => {
-                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
-                        link.classList.remove('parent-active');
-                    }
-                });
-            
-                // Toggle the active state for the clicked submenu
-                submenu.classList.toggle('active-sub-menu');
-            
-                // Add/remove the active class for the parent link
-                if (submenu.classList.contains('active-sub-menu')) {
-                    parentLink.classList.add('parent-active');
-                } else {
-                    parentLink.classList.remove('parent-active');
-                }
-            }
+function toggleSubmenu(event, submenuId) {
+  event.preventDefault();
+  const submenu = document.getElementById(submenuId);
+  const parentLink = event.currentTarget;
+
+  // Close all other submenus
+  const allSubmenus = document.querySelectorAll('.submenu');
+  const allParentLinks = document.querySelectorAll('.sidebar-link');
+
+  allSubmenus.forEach(menu => {
+    if (menu.id !== submenuId) {
+      menu.classList.remove('active-sub-menu');
+    }
+  });
+
+  allParentLinks.forEach(link => {
+    if (link !== parentLink) {
+      link.classList.remove('parent-active');
+    }
+  });
+
+  // Toggle current submenu
+  submenu.classList.toggle('active-sub-menu');
+  parentLink.classList.toggle('parent-active');
+}
+
+// ✅ Page load হলে attendance-submenu auto open থাকবে
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("attendance-submenu").classList.add("active-sub-menu");
+  document.querySelector("[onclick*='attendance-submenu']").classList.add("parent-active");
+});
   </script>
 </body>
 </html>

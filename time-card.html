@@ -85,7 +85,7 @@
 </a>
 
   <div class="submenu" id="attendance-submenu">
-  <a href="time-card.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/time.svg" alt=""></span>  Time Card</a>
+  <a href="time-card.html" class="gap space active"> <span><img class="payroll-images" src="./assets/image/time.svg" alt=""></span>  Time Card</a>
   <a href="attendance-correction.html" class="gap space"> <span><img  style="height: 21px;" src="./assets/image/Group.svg" alt=""></span>Attendance Correction</a>
 </div>
 
@@ -421,41 +421,40 @@
   });
 
 // New JavaScript function to handle the submenu with the new active class name
-            function toggleSubmenu(event, submenuId) {
-                event.preventDefault(); 
-                const submenu = document.getElementById(submenuId);
-                const parentLink = event.currentTarget; 
-                
-                // Get all submenu containers and parent links
-                const allSubmenus = document.querySelectorAll('.submenu');
-                const allParentLinks = document.querySelectorAll('.sidebar-link a');
-            
-                // Remove the active class from all other submenus and their parent links
-                allSubmenus.forEach(menu => {
-                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
-                        menu.classList.remove('active-sub-menu');
-                    }
-                });
-            
-                allParentLinks.forEach(link => {
-                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
-                        link.classList.remove('parent-active');
-                    }
-                });
-            
-                // Toggle the active state for the clicked submenu
-                submenu.classList.toggle('active-sub-menu');
-            
-                // Add/remove the active class for the parent link
-                if (submenu.classList.contains('active-sub-menu')) {
-                    parentLink.classList.add('parent-active');
-                } else {
-                    parentLink.classList.remove('parent-active');
-                }
-            }
+function toggleSubmenu(event, submenuId) {
+  event.preventDefault();
+  const submenu = document.getElementById(submenuId);
+  const parentLink = event.currentTarget;
+
+  // Close all other submenus
+  const allSubmenus = document.querySelectorAll('.submenu');
+  const allParentLinks = document.querySelectorAll('.sidebar-link');
+
+  allSubmenus.forEach(menu => {
+    if (menu.id !== submenuId) {
+      menu.classList.remove('active-sub-menu');
+    }
+  });
+
+  allParentLinks.forEach(link => {
+    if (link !== parentLink) {
+      link.classList.remove('parent-active');
+    }
+  });
+
+  // Toggle current submenu
+  submenu.classList.toggle('active-sub-menu');
+  parentLink.classList.toggle('parent-active');
+}
+
+// ✅ Page load হলে attendance-submenu auto open থাকবে
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("attendance-submenu").classList.add("active-sub-menu");
+  document.querySelector("[onclick*='attendance-submenu']").classList.add("parent-active");
+});
 
 
-
+// 
   window.addEventListener('load', () => {
             const loader = document.querySelector('.page-loader');
             

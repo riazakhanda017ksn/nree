@@ -6938,6 +6938,10 @@ div#launchpage-title-2 h2, #launchpage-title-1 h2  {
 } */
 
 
+.submenu.active-sub-menu {
+  
+    padding-right: 0;
+}
 button#screenshotBtn {
     padding: 7px 8px;
     display: flex;
@@ -6957,6 +6961,5 @@ button#screenshotBtn {
 
 .personalfilesection__breadcrumbs {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 } 

@@ -46,9 +46,19 @@
           <span><img src="./assets/image/healthicons_ui-user-profile.svg" alt=""></span> My Profile
         </a>
 
-        <a href="payroll.html" class="gap space active">
+      <a href="#" onclick="toggleSubmenu(event, 'payroll-submenu')" class="gap space active ">
           <span><img class="payroll-images" src="./assets/image/lets-icons_money-light.svg" alt=""></span> Payroll
-        </a>
+ 
+</a>
+
+<div class="submenu" id="payroll-submenu">
+  <a href="payslip.html" class="gap space active"> <span><img class="payroll-images" src="./assets/image/files.svg" alt=""></span>  Pay Slip</a>
+  <a href="salary-card.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/salary-card.svg" alt=""></span>Salary Card</a>
+  <a href="tax-slip.html" class="gap space "> <span><img class="payroll-images" src="./assets/image/tax-slip.svg" alt=""></span>Tax Slip</a>
+  <a href="income-tax-deduction.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/pf-deduction.svg" alt=""></span>Income Tax Deduction</a>
+  <a href="provident-fund-deduction.html" class="gap space"> <span><img class="payroll-images" src="./assets/image/pff.svg" alt=""></span>PF Deduction</a>
+
+</div>
 
         <a href="pms.html" class="gap space " >
           <span><img  src="./assets/image/mynaui_chart-line.svg" alt=""></span> PMS
@@ -173,7 +183,7 @@
         <div class="loader-ring"></div>
     </div>
 <div class="dashboard"  id="captureArea">
-    <div class="personalfilesection__breadcrumbs">
+    <div class="personalfilesection__breadcrumbs" style="justify-content: space-between;">
      <div class="breadcumbs-item">
        <span class="personalfilesection__breadcrumbs-item"><a href="index.html" style="text-decoration: none;color: rgb(18, 18, 18); display: inline-block; margin-left: 10px;">Home</a></span>
       <span class="personalfilesection__breadcrumbs-sep">/</span>
@@ -388,40 +398,39 @@
     }
   });
 // New JavaScript function to handle the submenu with the new active class name
-            function toggleSubmenu(event, submenuId) {
-                event.preventDefault(); 
-                const submenu = document.getElementById(submenuId);
-                const parentLink = event.currentTarget; 
-                
-                // Get all submenu containers and parent links
-                const allSubmenus = document.querySelectorAll('.submenu');
-                const allParentLinks = document.querySelectorAll('.sidebar-link a');
-            
-                // Remove the active class from all other submenus and their parent links
-                allSubmenus.forEach(menu => {
-                    if (menu.id !== submenuId && menu.classList.contains('active-sub-menu')) {
-                        menu.classList.remove('active-sub-menu');
-                    }
-                });
-            
-                allParentLinks.forEach(link => {
-                    if (link.nextElementSibling && link.nextElementSibling.classList.contains('submenu')) {
-                        link.classList.remove('parent-active');
-                    }
-                });
-            
-                // Toggle the active state for the clicked submenu
-                submenu.classList.toggle('active-sub-menu');
-            
-                // Add/remove the active class for the parent link
-                if (submenu.classList.contains('active-sub-menu')) {
-                    parentLink.classList.add('parent-active');
-                } else {
-                    parentLink.classList.remove('parent-active');
-                }
-            }
+  function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    const submenu = document.getElementById(submenuId);
+    const parentLink = event.currentTarget;
 
+    // Close all other submenus
+    const allSubmenus = document.querySelectorAll('.submenu');
+    const allParentLinks = document.querySelectorAll('.sidebar-link');
 
+    allSubmenus.forEach(menu => {
+      if (menu.id !== submenuId) {
+        menu.classList.remove('active-sub-menu');
+      }
+    });
+
+    allParentLinks.forEach(link => {
+      if (link !== parentLink) {
+        link.classList.remove('parent-active');
+      }
+    });
+
+    // Toggle current submenu
+    submenu.classList.toggle('active-sub-menu');
+    parentLink.classList.toggle('parent-active');
+  }
+
+  // ✅ Page load হলে payroll-submenu auto open থাকবে
+  window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("payroll-submenu").classList.add("active-sub-menu");
+    document.querySelector("[onclick*='payroll-submenu']").classList.add("parent-active");
+  });
+
+// 
   window.addEventListener('load', () => {
             const loader = document.querySelector('.page-loader');
             
