@@ -276,6 +276,10 @@ h3.dashboard-text {
   margin-bottom: -6px;
 }
 
+.active.x-active {
+    background: #218FEC;
+}
+
 .user-bg {
   margin-top: -40px;
 }
