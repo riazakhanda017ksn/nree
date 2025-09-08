@@ -578,6 +578,8 @@ h2.notification-text {
     padding: 25px !important;
 }
 
+
+
 .login-container span {
     font-size: 15px;
     margin-top: 18px !important;
@@ -2496,7 +2498,6 @@ grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
 }
-
 .login-form form {
     width: 600px;
     background: linear-gradient(45deg, #f8f8f86b, transparent),url(../image/Ve.png)no-repeat;
@@ -2509,6 +2510,24 @@ grid-row-gap: 0px;
     margin-left: 145px;
     border-radius: 10px;
     padding-top: 75px;
+    position: relative;
+    padding-bottom: 75px;
+}
+.footer-item {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+    border-top: 1px solid #8080803d;
+}
+img.proedge0logo {
+    background: white;
+    height: 65px !important;
+    padding: 12px 0;
+    border-radius: 31px;
+    border: 2px solid #8080803d;
+    margin-top: -66px;
+    z-index: 99;
     position: relative;
 }
 .avatar__img {
@@ -2564,6 +2583,10 @@ grid-row-gap: 0px;
     display: block;
     margin-top: 17px;
     font-size: 14px;
+}
+.login-container {
+ 
+    height: 94vh;
 }
 
 
